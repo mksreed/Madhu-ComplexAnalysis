@@ -1,0 +1,193 @@
+Welcome to the course,
+Analysis of a Complex Kind. This is the first lecture in this course
+and I'll introduce the course to you, tell you some of the topics we'll be covering
+and give you a history of complex numbers. A little bit about myself, so
+my name is Petra Bonfert-Taylor. I was born raised and educated in
+Germany more precisely in Berlin. I got my PhD at the Technical University
+of Berlin in 1996. And then I went for
+a postdoc at the University of Michigan. And after three years there, I started a tenure-track
+position at Wesleyan University where I am now a professor and
+I have been there since 1999. In this course, we will be studying
+complex numbers and their properties. We'll go into details later,
+just as a quick review complex numbers have a real part x and
+an imaginary part y. And we often display them in
+the complex plane where x, the real part is the x coordinate and then
+the imaginary part is the y coordinate. And so this gives us a nice graphical
+interpretation of complex numbers. Don't worry, we'll review all this later. We'll also explore some of
+the history of complex numbers. We'll talk about some important people who were important in
+the development of complex analysis. We'll talk about Bernhard Riemann. We'll talk about Cauchy,
+we'll talk about Weierstrass. We'll talk about all kinds of people. We'll also talk about
+the complex number i. Where did it come from? What is it's history? We'll talk about limits. Where do those come from? Especially limits in complex analysis. We'll talk about the constant e. We'll talk about some topological concepts
+such as open sets or connectedness. We'll explore all of these in this course. Once we have studied complex numbers for a little bit we'll be able to
+learn about complex dynamics. You probably have seen this
+beautiful Mandelbrot set or zooms into the Mandelbrot set
+before we'll be able to learn how to construct this beautiful set and
+how to calculate it. This is an example of
+a Julia set over here. And we'll also learn how to create those. So this is the Mandelbrot set. And here's an example of Julia set. Most study both these in this course. After having learned about complex
+numbers, we'll study complex functions. We'll understand what it means for
+a function to take a complex argument, to plug in something complex into a function,
+and for the output to be complex. We'll study their continuity,
+complex differentiation. So if you're talking about what
+function takes the complex argument in the picture that we
+saw in the first slide. We realize that a complex
+number can be displayed as having a real part
+in the imaginary card. So there was the x and
+the y giving us a complex number z. So in order to graph a complex
+function that maps a portion, maybe, of the complex plane into
+another portion of the complex plane. We're going to need two pictures, one for
+the domain, and one for the image. So where does this get mapped to? So maybe this'll get mapped
+to something like this. And we'll study how to
+find complex functions and how to visualize complex functions. We'll be able to talk about some of
+the most important theorems in complex analysis, one of them being
+the Riemann Mapping Theorem. We won't be able to prove a theorem like
+that, but we will be able to study it. Here's what
+the Riemann Mapping Theorem says. No matter what shape domain you choose,
+if you choose some kind of figure that doesn't have any holes you'll be able to
+find a mapping, an analytic function. One of these mappings we'll be
+studying in this course, and map it onto the unit disc. We'll explain this in detail and
+learn why this is an important theorem. We'll study complex integration. Since we'll be differentiating,
+we should also be integrating. So we'll study complex integration and
+we'll learn formulas like this. These will all make sense to us after
+this course, and as a consequence, we'll be able to prove the fundamental
+theorem of algebra for example. Given any polynomial you're able to
+factor this polynomial into n factors. This is the fundamental
+theorem of algebra. We'll study power series
+representations of analytic functions. And we'll even be able to talk
+about the Riemann hypothesis, which is an open conjecture that was
+conjectured by Bernhard Riemann. And to this day has not been proved. And it is related to prime numbers,
+believe it or not. And we'll study how it is related to
+prime numbers and the veracity of this conjecture has implications for
+the distribution of prime numbers. So let's get started and let's talk about
+a brief history of complex numbers. So, look at a quadratic equation,
+something like x squared = mx + b. We all know how to solve
+a quadratic equation. And if you think about this briefly,
+the solutions are x is m over 2. Where m is this number in front
+of the linear term, plus or minus this square root
+of m squared over 4 + b. And if you look at this equation by
+itself, what it really represents is, it represents the intersection
+of the graph of y = x squared, and you see that graph right here,
+y = x squared, and the graph of y = mx + b,
+which you see right here. It's just a line, mx + b is just a line. And when are those two equal? Well they're equal where
+the graphs intersect. So they're equal here and
+here in this particular picture. So these are the two x values that
+are given to you by this formula. So that was discovered a long time
+ago the Greeks already knew this and were all very familiar with this formula. So here again I just wrote
+down this formula for the solution of that particular pro
+ID equation that we're looking at. But what would happen if this
+number under the square root right there m squared
+over 4 + b was negative. Then you wouldn't be getting
+any solutions, right? So in particular, if your equation
+was x squared = -1, in that case, m, the linear term is actually 0 and
+that b is = to -1 so you would end up with
+a solution of x = and once the arrows of zero over
+2 + or- the square root of m is still 0 + b and b is -1. So of course we know that x squared
+equals -1 it has no real solutions there is no number you can square and
+get negative one. And it is often argued that this led to
+the invention of the complex number i. Which is just the square root of -1. If there was a number whose square root
+is -1, then we could solve this equation, it would be good. And that number's called i. And so it's often argued that the solution
+of the quadratic led historically to the invention of i. But historically, actually,
+there was absolutely no interest in non-real solutions of the quadratic
+equation because in that case it is simply the case that the graph of y
+= x squared and mx + b don't intersect. So for example in the case x
+squared = -1 while the graph of y equals x squared is just this parabola,
+the graph of the right-hand side right here is the line y equals
+-1 which is this line down here. And these two graphs
+simply don't intersect. They have nothing to do other
+than they never intersect. So there is no intersection,
+so there's no solution. But we don't need to make
+up a complex solution. There was simply historically no interest in non-real solutions because
+the graphs just don't intersect. So where did complex numbers
+really come into importance? It is with a cubic equation. Those were the real reason for
+the importance of complex number. So let's look at a cubic equation. We don't have a quadratic term here. It's just an example of a cubic equation. So the cubic equation, what we're
+looking at is x cubed is px + q. And again, a solution of this equation represents
+the intersection of y = x cubed. And I drew that right here, with y = px + q which is
+just that line right there. So again it's the intersection of
+a curve and a line and as we can see because the cubic goes all the way
+from plus infinity to minus infinity, no matter what line you draw it will
+always intersect the cubic somewhere. There is no line you could draw
+that won't intercept this cubic. So this is very different from
+the quadratic case which was a parabola line you could draw a line
+such as to intercept the parabola line. In the cubic case,
+any line will intercept the q. So there always must be a solution. Now, Italian Mathematicians Del Ferro and
+Tartaglia, followed by another Italian Mathematician,
+Cardano, showed that this cubic equation, x cubed = px + q, has a solution and it's
+given by this rather complicated formula. So p is the number in
+front of the linear term, q is that number that doesn't
+have any xs attached to it. And if you take these numbers and plug them into this rather complicated
+equation, then suppose that you get an x. So let's actually try this out. So go ahead and
+look at the equation x cubed = -6x + 20. What solution does this formula give you? Well first we notice that,
+what is p and what is q? P is = to -6 and q is = to 20. So when we plug these numbers
+into this equation right here, under the inside square root we get
+q squared over 4, which is 100. Minus p cubed over 27 is- 8. So together one hundred
+minus minus 8 is 108. So we find x is equal to the cubed root of the square root of 108 + q over 2 so that's 10- the cubed root of, and now we have the same
+square term right there, square root of 108 but then- 10. Then you get your calculator out and you find out that the solution is x = 2. And indeed 2 cubed is = to 8 and- 6 x 2 is minus 12 + 20 that is also eight so two is indeed a solution of this equation. So, so far so
+good that formula it seems to be correct. About 30 years after this
+discovery of this formula, another Italian Mathematician
+by the name of Bombelli consider the following cubic equation. X cubed = 15x + 4. So p = 15 and q = 4. If you plug this into the formula and
+then do some simplifications. In particular, we're going to pull a negative
+sign out of the second cubed root. Then eventually you find
+yourself with x being the cubed root of 2 + the square root of -121. Plus the cubed root of 2-
+the square root of -121. And that's a problem because if you can't
+take a square root of a negative number, then this does not give you a solution. However, we know any cubic and
+a linear function, they must intersect, so there must be a solution but
+you can't find it using this formula. So Bombelli had a really wild thought. I and the square root of -1
+being i had been talked about. And so he took this a step further and
+said wow. Maybe if I could make
+calculations with this number i the way I do normal
+calculations maybe this ends up being some number that involves an i and
+on the left hand side some other number. Maybe things would cancel out so
+I do end up getting a real solution. And he thought about this for quite
+a while and came up with a thought that the cupid of 2 + the square root of -121
+should be 2 + the square root of -1. And the cubed root of 2- square root of
+-121, should be 2 minus square root of -1. Then when you add up these two terms
+as you have to in that formula. 2 + square root of -1 and
+2- square root of -1. No matter what square root
+of negative 1 really is, it cancels out with
+this- square root of -1. So these two terms will just
+cancel each other out and what's left is 2 + 2 which is equal to 4. 4 is the solution to the cubic
+equation we're looking at. It is the desired solution. Now, let's check this out. Is it really true that 2 plus
+square root of -1 cubed is = to 2 plus square root of -121? Because that would have to be
+the case if it was indeed true that the cubed root of this
+number is 2 + square root of -1. If the cubed root of the left
+hand side is the right hand side, then if I cube both sides of the equation,
+then the cube of the left hand side, if I cube this side right there,
+I get this term. It should then be equal to the right
+hand side without that cubed root! So this would have to be true. So let's check out that
+this is indeed true. What is 2 + the root of -1 quantity cubed? Well that's tough because we don't really
+know how to work with the square of -1. But let's just pretend all
+the normal rules [INAUDIBLE]. So how do you cube something? Remember that way to cube a + b, the way that's typically done
+by a formula is a cubed, you can just boil it all out,
+but it's a cubed + 3 x a squared x b,
++ 3 ab squared, + b cubed. So if we use that formula right here, we would get 2 cubed + 3 x 2 squared. X the square root of -1 plus 3 x 2 x the square root of -1 quantity squared plus the square root of -1 quantity cubed. So, what does that give us? Well, what is the square
+root of negative 1 squared? Even if we don't know what the square root
+of -1 is, if we square whatever it is, the square root and the square should cancel each other out,
+so this would really be- 1. That's the idea of the square root of -1,
+and you square it get- 1 back. And what is the square root of -1 cubed? Well that's really the square root of
+-1 squared x another square root of -1. But we just figured out the square
+root of -1 squared is -1, and then there's this extra square root of -1. And so all together let's
+simplify 2 cubed is = 8. Then we have 3 x 2 squared,
+that's 12 x the square root of -1. And then we have 3 x 2 x -1. Against 6 x -1 is- 6. And here we have- 1 x square root of -1. Now we can combine at least like terms. We can combine this 8 and
+this negative 6, 8- 6 is = to 2. And we have 12 x whatever
+square root of -1 might be, and we're subtracting from that
+1 x the square root of -1. So all together we have 11
+x the square root of -1. What is 11 x the square root of -1? Well if square roots kind of interact
+normally, even with negative numbers, then we might be able to pull
+that 11 inside the square root. And that becomes 121 on the inside, and so it should be then be able to
+2 + the square root of- 121. And that's what we wanted to show. And so Bombelli was indeed correct, if I take the cubed root
+of this right hand side, the cubed root of 2 +
+the square root of -121. Is indeed equal to
+the [INAUDIBLE] of this left hand side 2 plus the square root of -1. And then similarly when
+you replace this + right here with a- then this
+plus also becomes a -. And then we add those two terms up,
+you end up with that 4, which was the solution to the cubic
+equation we were looking at. And so all of a sudden solving
+a perfectly real problem, that cubic equation Bombelli was
+looking at required accepting that complex numbers are important objects, and
+that we can do calculations with them as if they were objects that behave according
+to the rules of our real numbers. This is considered the Birth
+of Complex Analysis. It showed that perfectly real problems
+require complex arithmetic for their solutions and it also showed that we need to be able
+to manipulate complex numbers according to the same rules we're used to from
+real numbers, like the distributive law. And we need to be able to add them,
+we need to find out how to multiply them. So we need to study the rules of doing
+arithmetic with complex numbers. And that's what we'll study next.

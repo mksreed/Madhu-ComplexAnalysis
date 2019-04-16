@@ -1,0 +1,275 @@
+Welcome to the second lecture in our
+course Analysis of a Complex Kind. Today we'll be talking about algebra and
+geometry in the complex plane. We'll learn what the complex numbers are,
+how to add them, how to multiply them, how to subtract and
+divide them, and some of their properties. Complex numbers are simply
+expressions of the form z = x + iy, where x and y are simply real numbers. For example, z = 3 + i * 5 would be a complex number. Often that is just written as 3 + 5i, so it doesn't really matter if
+the i comes before or after. x, this first number right here, is called the real part because there's
+no i attached to it, whereas y, the second number with the i in front
+of it, is called the imaginary part. Or, in short, x is Re of z,
+the real part of z, and y is Im of z, the imaginary part of z. The set of all complex numbers is
+denoted by a C, for complex plane. This is like a C with a double bar in it. It's a regular C with an extra bar in it. That's the mathematical symbol for
+the complex plane. The real numbers are considered
+a subset of the complex numbers, those for which that second parameter,
+that y, is simply equal to 0. So a number of the form z = x +
+0i is considered a real number. And so the real numbers are kind
+of subsets of the complex numbers. So our regular numbers, 3, 6, 7, they're
+all included in the complex numbers. The complex plane can be identified
+with R2, and here's how that goes. We often draw an actual plane,
+so a coordinate system. And we use the x-axis for the x
+coordinate, which is the real part of z. And we use the y-axis for
+the imaginary part of z. And with that convention, we can then draw a complex number z which
+is of the form x + iy, where the coordinates
+are here the x coordinate, the real part of z, and the y coordinate, that's the imaginary part of z. And thereby, the real numbers
+are actually sitting on that x-axis. The numbers on the y-axis are called
+purely imaginary numbers. Now how do we add complex numbers? Suppose we have a number z which
+is of the form x + iy, and we have a second number
+w of the form u + iv. How do we add them? So here we're defining
+the addition of complex numbers. We're defining them by simply adding
+the two numbers that don't have any i's attached to them, so the x and the u. We add those two numbers, and
+so those two real numbers. And then we add the y and
+the v and put the i in front. And so our new complex number, our
+resulting complex number has a real part, which is the sum of the two real parts,
+and has an imaginary part, which is the sum of
+the two imaginary parts. In other words, the real part
+of z + w is simply the real part of z plus the real part of w, and
+the imaginary part of z + w is simply the imaginary part of z
+plus the imaginary part of w. Let me give you an example. Suppose we were adding the numbers (3 + 5i) + (-1 + 2i). The way to do that would
+be simply to add the 3 and the -1, 3 + -1 = 2. And then add the 5 and
+the 2, and that's a 7i. Graphically, the addition of two complex numbers could be
+represented as a vector addition. So let's go back to our coordinate system. Suppose we have a vector z right here. I'll draw it as a vector even though it's
+really a point in the complex plane. And suppose we have a second vector w,
+which would be right here. So that's u + iv. If we wanted to add these two vectors,
+all we would have to do is we move the beginning of
+z to the end of w and sort of complete this parallelogram
+that you can see right here. And the vector in the middle,
+the diagonal vector, that corresponds to the vector z + w. So this point right here is z + w,
+and what we've done there, we have indeed added the x of z and
+the u of w. So from here to here, that distance is
+exactly the same as from here to here, which corresponds to the length u. And on the other hand,
+the same is true on the y-axis. So addition of complex numbers
+corresponds to a vector addition. The modulus of a complex number is the
+distance of that number from the origin, or the length of the vector
+from the origin to the point z. So again, if I draw my complex plane, and suppose I have a point z = x + iy. And this is the x coordinate and
+here's the y coordinate. And suppose I'm asking,
+how far is z from the origin? So I'm asking for this length right there. How long is that? And I'm going to call that
+the modulus of z, that length. Well, I can see there's
+a right triangle right here. And in order to find the length of
+the hypotenuse in that right triangle, all I need to do is I square
+the lengths of the two legs. But how long are those legs? This leg right here has length x squared,
+well, that's the square of this leg. This leg has length y, and so y squared. And together that gives me the length
+of the hypotenuse squared. So z squared is x squared plus y squared,
+or in other words, z itself is the square
+root of x squared plus y squared. Now how do we multiply complex numbers? Here's the motivation. Let's pretend for
+a second that they behave just like normal numbers that we know
+from elementary school. So suppose I have number x + iy and
+I wanted to multiply that with u + iv. And suppose all the regular rules held, so I can just distribute this
+out the way I'm used to. Then I would get x times
+u by multiplying this number with this number,
+plus ixv, from here. And then I get iyu And an i squared yv. So, we get exactly these four terms. Now, if i indeed has the property
+that i squared is -1, then this should really just be a -1 here. Now, this is a motivation, so
+this is the thought that goes into this following definition. If this is supposed to be true,
+then the part of this number that is revealed will consist of this
+xu because there's no i in there, and this number right here, because i² is -1,
+so -yv is also a real number. So, the real part of the product of these
+complex numbers should be xu, -yv and the imaginary part would
+be this together with this. So, xv + yu, and indeed that's
+how we define our multiplication. So, let's look at an example. Suppose we wanted to
+multiply 3 + 4i by -1 + 7i, so what I have to do
+according to this formula, I have to take the x and
+multiply it with the u that gives me a -3. Then, I have to take the y, just the 4, multiply it by v, and put a negative
+sign in front of the products. So, 4 times 7 is 28, -28, then I'm
+going to get the complex part by taking x and multiplying it with v. So, 3 times 7 that's this 21. And finally, I take y times u. So, this is y and u is here. So, 4 times -1 is -4. Then, I simplify ( -3- 28 ) is -31 and
+(21- 4) is 17. So, the result of this product is again
+a complex number, and it is -31 + 17i. Now, one can check that
+with this definition the usual properties of
+multiplication still hold, even though we're now multiplying complex
+numbers and not just real numbers. And those are, for example that z1 times
+z2 times z3, if you want to multiply three numbers, it doesn't matter
+if you multiply the first and the second first, then, take the result
+and multiply it by the third or, you multiply the second and the third and
+then, the first one times that result. This is called Associativity,
+you can move these blank piece around and decide which multiplication
+get's executed first. Multiplication is also communitive
+which means it doesn't matter if I write this factor first and this factor,
+or if I write this the other way around. So in fact, this would be the same
+thing as (-1 + 7i) (3 + 4i). You should check this out. Get out a piece of paper and apply this formula to this product and
+verify that, indeed, you do get the same result,
+-31 + 17i. Finally, our multiplication
+is distributed. So, if I have three complex numbers and
+I have to multiply Z1 by the sum of Z2 and Z3, I could also multiply this out and
+multiply Z1 and Z2 and multiply Z1 and
+Z3, and add them up. That's called the Distributive Law,
+and all of these laws still hold. Now, what exactly is i, that number i? So far, it's kind of just a symbol
+that's been sitting there. Well, i is certainly the same as 0 + 1i. And so,
+I can now calculate i squared because i is 0 plus 1 times i and
+the other i is also 0 plus 1 times i and I can use the rule of multiplication that
+answers to find to find out what this is. So, according to my rule of
+multiplication, I have to take this 0 and that 0 and multiply them and
+that gives me this number right here, then I have to take this one. And that one, multiply them and
+put a negative sign in front of it. That's, what I get right there. Then, I have to take this 0,
+and that 1, and multiply them. And finally, I have to take this 1, and that 0, and multiply them, and these
+two form the imaginary part together. So, 0 minus 1 is -1,
+and all the rest is 0. So, i squared is indeed -1. So the multiplication we define has
+the property that we wanted it to have, i squared=-1. So, what is i cubed? Well, i cubed is i squared time i by
+the associativity we just realized, it doesn't matter which one i
+multiply first, i squared is -1. So, i cubed is -1 times i, so it's -i. I to the 4th? Well, I could write that as
+i squared times i squared. Each of these i squared,
+as we just showed, is -1. So that's -1 times -1, and -1. What's i to the 5th? Well, that's i to the 4th times i. I to the 4th we just showed as 1,
+so it's 1 times i, which is just i. I to the 6,
+well that is i to the 5th times i. I to the 5th was i, i squared is -1. And it keeps going, so
+what have we noticed? I is i, i squared to the- 1,
+i cubed is- 1 before this 1. And then,
+these four numbers keep repeating. So i, i squared is -1, i cubed is- i, i to the 4th is 1, i to the 5th is i,
+Iito the 6th is -1, i to the 7th is negative i, i to the 8th is 1 and
+it keeps repeating like that. So, there's really just four different
+states that power of i can have. So, how do you divide complex numbers? Suppose we're given a z = x + i y and
+a w = u + i v, so two complex numbers. How do I divide z by w? And of course I'm going to need w
+to be non 0, I can't divide by 0. So, here's a great trick and
+I'll show that to you with actual numbers. Z over w would be x plus
+i y over u plus i v. Let's do this whole calculation
+with actual numbers. Suppose z is 3 plus 4 1 and so, suppose w is -1 + 7i and
+I wanted to calculate this quotient. So, I wanted to calculate 3 + 4i and divide that by -1 + 7i. How do I do that? What the idea is to multiply top and bottom by this number u-iv, so
+almost the same as the bottom but I'm multiplying it by the bottom number
+with the plus replaced by a minus. So, in our example here I would have still my top (3 + 4i) / -1 + 7i, but now, I would multiply top and bottom by- 1- 7 i. So, it's always the same at the bottom. But I'm replacing this plus
+here with a negative sign. Now, when I multiply this out, on top I have a regular
+multiplication of two complex numbers. So I'm going to get here, 3 times -1. It's -3 Then 4 times negative
+7 is negative 28, but I'm going to have to make it a plus, because
+that's how the multiplication goes. And then plus i times, and I need to
+multiply the 3 by the negative 7, so that's negative 21, and
+the 4 by the negative 1, so minus 4. And what happens in the denominator? I have a U squared plus V squared. So I'm just going to
+multiply this through here. Negative one times negative one is one. And I have a seven times
+times a negative seven. That's negative 49, but
+I'm going to make that a plus, so plus 49. And then I get + i times negative
+1 times negative 7, that's 7. And 7 times negative 1 is negative 7. And now see what happened. So on top I have in this example here,
+28 minus 3, so that's 25. Plus i times and
+here I have minus 20 minus 4 is minus 25. And my denominator, I have a 50 and
+the imaginary part went away. And so in other words,
+this simplifies to a complex number. I have no more i's in the denominator. And so I can simplify this 25
+divided by 50, simply one half plus i times and
+here I have a minus one half. It could have pulled the minus sign
+out and put it right here, but this looks exactly like
+our complex numbers look. In other words, when I divide complex numbers,
+the result is again a complex number. And the trick we used was to
+make the denominator real. And how did we do that? We make the denominator real by
+multiplying the denominator (u + iv) by (u- iv). We also multiply the numerator by that so
+that we would have equality. So we just multiply top and
+bottom by (u- iv) but the trick was that that made
+the imaginary part cancel out. And so the denominator became purely real,
+so that we could then separate real and imaginary part of the result. So here's the result. It's a formula for
+the quotient of two complex numbers. In particular, if we just wanted to
+calculate 1 over z, so not z over w, but just 1 over a complex number is 1 / x +
+iy and again we would do the same thing. We would multiple top and
+bottom by x- iy and if we do that and the bottom the imaginary
+parts would cancel out and we would just end up with
+x squared + y squared. That's unless, of course, z is not 0. So, 0 plus 0i would be i. Couldn't be dividing by that. That this is 1/z. So this quantity x- iy were we just
+replaced the plus with the minus, that was really important in
+the previous calculation. It is so
+important that we give it a special name. So if z equals x + iy is a complex number,
+then we call that complex number would be replaced the plus
+with a minus the complex conjugate of z. And it's denoted with a z with a bar
+on top of it, do you see that here? So zbar is the complex conjugate of z. So let's look at some of its properties. If you conjugate twice,
+you end up with the original number. If you take the conjugate
+here which is X- iy. And you take another conjugate of that, all you do is you flip the sign in
+front of the imaginary product. You're going to end up with x minus
+-iy and minus and minus is plus, so that's x + iy and we're back to
+the original number we started with. So taking the conjugate twice,
+gets you back to where you started. What does taking the conjugate
+mean graphically? Let's go back to our coordinate system. And that's supposed to have a complex
+number z right here Which is x plus iy. Then where is the complex
+number x minus iy? Right here's x, and there's y. When I'm going to retain the x for
+the complex conjugate, but I'm making the y negative,
+I'm taking -y instead of y. And so in other words,
+I'm going to get this number right there for
+the complex conjugate = x-iy. So the complex conjugate is the number z,
+but it's reflected with respect to the x-axis. Now here's a property of complex numbers. If I take the complex conjugate
+of a sum of two complex numbers, I might just as well take the conjugate
+of z first and then the conjugate of w, and then add those two numbers up. It's a property one easily verifies. The absolute value of the conjugate is
+the same as the absolute value of Z. We can kind of see that in my picture,
+right here. But this length right there is
+the length of Z and down here is the length of the conjugate of Z and
+because this is just a reflection of that. These, of course, have the same length. Large as you see, in my picture. But because this is a reflection
+they have the same length. Now here's a really neat property. Z times its conjugate. That's what we were making off in
+the calculation of the quotient This x plus iy times x minus iy. When I multiply through,
+I get x times x, which is x squared. I get y times minus y,
+which is minus y squared, but together with a negative sign that I
+get from the i squared, so plus y squared. And I get x times minus iy,
+and x times plus iy. That cancels out. So, I get x squared plus y squared. Which is their length of z squared? So z times its conjugate is
+actually the length of z squared. And that means we can lead
+by the formula for 1 over z. 1 over z now becomes, multiply the top and
+bottom by z conjugate. So z times z conjugate, and
+in the numerator of z conjugate and the denominator simplifies
+to length of z squared, so 1 over z is the conjugate of z
+divided by the length of z squared. Now when is it the case that
+the conjugate of the number is equal to the number itself? We learned that the conjugate is simply
+a reflection with respect to the x axis. So when is the reflection with respect to
+the x axis the same as the number itself. So when is this number equal
+to its own reflection? Only if the number was on
+the real axis to begin with. So this is the case if. Z is a real number. Now here's another
+interesting thing to note. If you add a number and its complex conjugate, what you end
+up doing is (x + iy) + (x- iy). So you add the x and
+the x, you get 2x, and then you add the complex parts, the iy and
+the -iy, they cancel each other out. So you get something real. In other words if I divide this equation
+by two I get the x which is the real part of z. Is equal to Z plus its conjugate over two. So we find a nice formula for
+finding the real part of a complex number. We add the number to its conjugate. And similarly if you
+take a complex number and subtract the conjugate then you get
+two I times the imaginary part. So if you want the imaginary
+part by itself, without the I,
+you're going to have to divide by 2i. So this is also a nice formula. Now you can verify that the length of
+z times w is the length of z times length of w. So length in multiplication behave
+well with respect to each other. You can also verify that the conjugate of Z over W is the conjugate of
+Z over the conjugate of W. And finally that the length of Z is zero,
+if and only if Z was zero. Now this is pretty easily verified,
+because the length of Z, remember. Let's look at the square of the length. That's just x squared, plus y squared. And, x square plus y square,
+when is that equal to zero? These are two real numbers. One cannot be zero. They both have to be zero. So this is zero, if, and only if, x is equal to zero, and, y = 0. And that means if and only if
+the number z itself was the number 0. Now we have some inequalities
+that are really helpful. One of them is pretty obvious
+by looking at a picture. Let me draw the complex plane right here. And there's a complex
+number Z right there. Then this is the real part of Z,
+this length right there. It's the real part of Z. Whereas this length right here
+is the normal, the length of z. And this length right there
+is the imaginary part of z. So this is the real part of z and
+that's the imaginary part of z, and since they form a triangle I see that this
+length here is certainly greater than or equal to either one of those two lengths. And that's what's expressed here. The real part of z is less than or equal to the absolute value of z and
+the same is true for the imaginary part. And because that's true in
+absolute value we get the other inequality easily as well. An inequality that's also very
+nice is the triangle inequality. The length of z plus w is bounded above
+by the length of z plus the length of W. Now let me show you in
+a picture why that is the case. So let's add two complex numbers, z and w. So remember how we do that? We do a vector additions, here is z and
+suppose we wanted to add to that w. Then what we have to do,
+we have to complete this parallelogram. And this is our point |z+w|. And it can be represented
+by this diagonal. This is the length of |z+w|. And if I look over here, this length here that was the length of z,
+and here I see the length of w. Because it's the same vector
+as this one down there. And again these form a triangle, my triangle didn't really
+meet very nicely over here. These three lengths form a triangle and the shortest path from the origin to
+z+w is certainly this diagonal and the slightly longer path is to go
+along z first and then along w. So z+w is greater than or
+equal to the direct path z+w. That's what the triangle inequality says. There's a reverse triangle inequality that
+follows from the triangle inequality. It's |z- w| is greater than or equal to
+|z|- |w|, won't go into much detail there. Finally, a little outlook into the future. This is the fundamental theorem of
+algebra, you may have heard of it. Suppose we have complex numbers a0,
+a1 through an, and this an, this last one,
+is a nonzero number. If you look at this polynomial,
+so for example, if you'd like to have an example in mind, you could look up the polynomial
+p of z equals 5 z cubed plus 4 z squared minus 2 z plus 14. So in this case, 3 would be
+the largest n that we have here, so a3 would be 5, a2 is 4,
+a1 is negative 2, and z0 is 14. So this is called a degree 3 polynomial,
+and this theorem says that such
+a polynomial has n roots. So in this case it has three
+roots in Cs of 3 ps for which p of z can be equal to 0. And it can be factored as
+an times Z minus the first group, Z minus the second group and so forth. We'll be able to prove this
+theorem later on in this course. Now, in R this was totally not true. This is a special fact
+about complex numbers. For example,
+look at polynomial p (x) = x squared + 1. So we have a degree two polynomial,
+but we're only considering it for real numbers and not for complex numbers. This never, even crosses the x axis. So, if I graph this polynomial x squared
+plus one is always above the x axis. It never crosses the x axis, so
+it's never equal to zero and so we can't factor it either,
+it has no real roots. But, if you looked at that
+as a polynomial in C. So z squared + 1 instead of x squared + 1,
+and we're allowed to not only plug in real numbers for
+the x, but also complex numbers. Then I can find two complex numbers,
+namely i and negative i, for which this term right here
+is actually equal to 0. i squared plus 1 is 0 and
+minus i squared plus 1 is also zero. [INAUDIBLE] And so it actually factors. So this is a theorem
+about complex numbers and we will be able to prove this later on
+using complex analysis in this course.

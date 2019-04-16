@@ -1,0 +1,120 @@
+Welcome to lecture four in our
+course analysis of a Complex Kind. Today we'll talk about
+roots of complex numbers. You all know that
+the square root of 9 is 3, or the square root of 4 is 2,
+or the cubetrid of 27 is 3. But how would you take
+a square root of 3+4i, for example, or the fifth root of -i. That's what we're going to
+talk about today. Lets begins with a definition. Suppose w is a complex number. Then we say an nth root of w is another complex number z such that z to the n = w. So we'll see that if the number w is a root we're taking, is not = 0, and there are exactly n distinct nth roots. So there are two distinct
+square roots of any number. There are three distinct cube roots and
+so forth. And how do we see them? We use the polar form for
+w and z to show this. So we'll write w as rho e to the i phi,
+and z is re to the i theta. So you noticed we just introduced yet
+another Greek symbol. Namely, the simply rho,
+here for the radius. Because r is already used up for
+the radius of z. Now, if we use these notations. Then z to the n equals w. That equation, that defining equation for
+being an nth root. That equation becomes, if we write
+instead of z re to the i theta. Then we get r to the n e to the i n theta. By the rules of how to
+manipulate this e to the i theta is equal to w,
+which is a rho to the i theta. So to compare these two complex
+numbers and polar notation one or two numbers the same. They have the same distance from
+the origin and were angles, degree modular to pi. So r to the n has to be equal to rho. And this angle and beta has to be talking about the same
+angle that z is talking about. They can differ by 2 pi or by 4 pi, but
+they can't differ much other than that. So m theta is pretty much the same as z, expect maybe for At 2k pi. So r to the n = rho, that means r
+itself is the nth root of rho and since rho is just a positive
+real number by nth root. When I write the symbol nth root I mean
+the regular nth root that we all know. The regular nth root, not a complex root. Just the regular nth root of rho. And n theta has to be equal to phi
++ 2k pi where k is some integer. So I can divide this equation by n and I get theta a has to be phi over n
+plus 2k pi over n and it turns out. If I look at the values of K from 0,1 and
+so forth to n-1 I have
+exhausted all possibilities. After that, things start repeating. So these are actually distinct roots, and if I look at k equals n for
+example when k = m. What would I get? I would get theta = fi over n plus 2, in our case = n. 2 n pi divided by n that
+N would cancel out so I would have phi over n plus 2 pi. But I already looked at the angle theta
+equals phi over n 1k was equal to 0. So I would get kind of the same angle
+as the one I got when k was equal to 0. And so, I don't get any new angle. I'm getting different angles here for
+k equals 0 through n minus 1 and then the angles start repeating. And so, I get all my different
+solutions as w to the 1 over n. This is how I denote my
+solutions is = to the nth root of ro times etha i,
+fi over n plus 2 k pi over n. Where k runs through the values 0,
+1 all the way to n minus 1. So these are the nth roots of w and
+there all these things from each of. One special root is
+the principal nth root of w. It's the one that we obtain when we
+choose the principal argument of w for pe and k equals zero. So here again I wrote down
+this formula we just found. If W is of the form rho e to the I Phi,
+then the nth roots of W can be found with this formula,
+for these n values of k. So let's find the square
+root of 4i as an example. So first of all 4i, we need to bring that into this form,
+in the form rho e to the I phi. So we have to figure out what's rho,
+what's phi. 4i is 4 times instead of i
+we can write e to the i pi over 2 we discovered that
+during the last lecture. And so in other words, this row is 4. And phi and a possibility for
+the angle phi pi over 2, and we wanted to take this square
+root of the second root. So n is 2. So now we have everything we
+need to plug in this formula. So we find 4i to the one-half is equal to the square root of 4, times e to the i. Now we need to take phi and
+divide it by n. Phi is pi over 2, divided by n. That gives me pi over 4. Plus, 2 k pi over n. We'll just write that down. 2 k pi over 2 because my n is 2. So here's the complete formula, and
+we need to plug in k = 0, and then k = 1. So we get two separate solutions. For k = 0, this whole second term
+2 k pi over 2 which is not there. And so, we find square root of 4 which
+is 2 times e to the i, pi over 4. That's one of my two square roots,
+and when k's equal to 1, 2k pi over 2 becomes 2
+pi over 2 which is pi. So I get 2 times either
+the i pi over 4 plus pi, but remember what e to the i pi equals? Pi is a 180 degree angle. E to the i pi, is this number right here. That forms a 180 degree angle. That's a number minus 1. So, since I can pull this exponent apart. e to the i pi over 4 plus pi is actually
+the same as minus e to i pi over 4. So the second solution is the same as the
+first solution except for a negative sign. So these two are actually
+the same except a negative. So plus or minus, and
+remember what e to the i pi over four was? We also looked at that during
+the last lecture e to the i of pi over four was this number on the unit
+circle at a 45 degree angle. And we found that was root over two
+over two plus i times root 2 over 2. If I multiply that number by two
+it becomes root 2 plus i over 2. So root two plus i over two. I see that right here,
+and with a plus or minus. Plus for the k equals zero solution,
+minus for the k equals one solution. So in the picture, I'm drawing a lot
+of pictures here all over the place. The square roots of four i,
+where are they? Four i is kind of far up on the Y axis, i is here. The square root of 4i are at distance 2. So on the circle radius 2. And at a 45 degree angle. That's one of the square roots,
+and the other one is over here. So these are the two square roots of 4i. And in coordinates, they are plus or
+minus root two plus i root two. Let's do the same thing for
+the cubed roots of -8. First step again,
+we have to write -8 in polar form. For it's just not minus eight
+because the polar form has to have a positive radius right here. While the radius of minus eight,
+the norm of minus eight is eight. And the minus sign you get that
+by writing e to the i pie. So eight times e to the i pie,
+that's the polar form of minus eight. So in other words,
+this row is equal to eight. And phi the angle is pi. And you want to take the cubed roots,
+so my n is 3. Again now, I have everything I need
+to plug in to this equation and I can go ahead and do that. So the cubed roots of 8
+can be found by taking the regular cubed root of 8 This
+is just one cubed over eight, the one for eight being a positive number,
+so that's actually two. This number right here, that's simply two, because two cubed is eight
+times e to the i, phi over n. Phi is pi, n is three. So I get a pi over three right there. Plus two k phi over answer,
+two k phi over three. And now I need to consider k equals zero,
+one and two because I'm taking the cubed root. So let's start with k equals zero. So this whole second term is in
+there when k is equal to zero and assumed to get two times e
+of the i phi over three. When k's equal to 1,
+the second term becomes 2 pi over 3. So I have pi over 3 plus 2 pi over 3. Well, that's 3 pi over 3, or simply pi. k = 1 my root becomes 2 to the e ipa 1, but remember e to the i pi is negative 1. So the second solution is negative 2, and
+indeed if you check that negative 2 cubed. What's negative 2 cubed? Well negative 2 cubed
+is negative 8 indeed. And the third solution is 2
+times e to the i pi over 3 and now we have to plugin k verse 2. So 4 pi over 3 but pi over 3 is
+4 pi over 3 that's pi pi over 3. So this is the third
+solution that we find. Let's turn to our picture where
+we find where this solutions are. So -8 is somewhere way down
+here on the negative x axis, and we want to find
+the cubed roots of eight. So they're all on
+the circle of radius two. So there's four and there's two. So here is the circle of radius two
+all cubed roots of radius two and one of them is at at angle pi over three. One of them is an angle pi and
+then we said angle five pi over three. So here's the angle pi, and
+there is phi over three and there is phi, phi over three. So these are the cubed roots of -8. Just a quick other definition,
+the nth roots of the number 1. Those are called the nth roots of unity,
+because 1 is going to be unity. So what do those look like? Well the number 1 is in polar form,
+1 times e the i times 0, so angle 0. So if we plot that into our formula. We get the nth root of 1 is
+the regular nth root of 1, which is just 1,
+times e to the i phi over n. Phi is 0, so 0 over n plus 2k pi over n,
+and k runs from 0 through n minus 1. So replacing the nth root of 1 here. Just with a number 1,
+I get e to the i to k pi over n. So these are the nth roots of unity. And again, let's draw a picture
+to understand what they are. So this time 1 I'm going to draw that right here and let me draw
+the circle of radius one right here. So this is the circle of radius one and
+I want to find the nth roots of one. And they're all of radius one and
+their angles are 2 pi k over n. So for example, for
+the eighth roots of one I need to find the angle 2 pi over 8. This is 2 pi over 2,
+coz that's pi 2 pi over 4. So 2 pi over 8 will be here. 2 times 2 pi over 8, 3 times 2 pi over 8,
+4 times 2 pi over 8, 5 times 2 pi over 8, 7 times 2 pi over
+8 And this is 0 times 2 pi over 8. So I have these equally spaced
+points on unit circle that correspond to the 8th roots of unity. I simply divide the whole angle
+into as many parts as necessary and that gives me the nth roots of unity.
