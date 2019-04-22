@@ -1,0 +1,182 @@
+Welcome to Lecture 5 in our second week of
+the course, Analysis of a Complex Kind. Today, I'm going to introduce the
+Mandelbrot set to you and show you some beautiful pictures and also explain to you
+how to generate these beautiful pictures. Recall that the Mandelbrot set is
+the set of all those parameters c in the parameter plane for which
+the corresponding Julia set is connected. So you pick a c in the complex plane, you consider the quadratic
+polynomial f(z)=z squared + c. You calculate its Julia set, and you look
+at whether this Julia set is connected. And if so, then the parameter c
+belongs to the Mandelbrot set. So how could a computer
+check such a condition? Thankfully there's a theorem,
+which says the following. If f(z) is a quadratic polynomial
+of the form z squared + c, then the corresponding Julia
+set is connected if and only if 0 does not belong to A(infinity). In other words, if and
+only if the orbit of 0 remains bounded under iteration of this function, f(z). So, what do you do now? You pick a complex number, c. You consider the corresponding quadratic
+polynomial, f(z) = z squared + c. You plug in 0, and
+you follow the point 0 around. Where does 0 get mapped under f? It's mapped to f(0),
+which is 0 squared + c, so that's c. Where does c get mapped under f? It gets mapped to f(c) which is
+f(f(0)) which is c squared + c. And where does that get mapped under f? So if you look at the orbit of 0
+under the function z squared + c and you find out, does it get attracted to
+infinity, or does it remain bounded? If it remains bounded under iteration, then this parameter c
+belongs to the Julia set. In fact,
+it is possible to show the following. A complex number c belongs to M if and
+only if the orbit of 0 remains bounded by the number 2 and
+absolute value for all n. And this tells us a great
+computer algorithm to check whether a parameter c belongs
+to the Mandelbrot set. Here it is. As always, you need to choose a window, a window of c values,
+parameter values that you want to display. We're no longer in the z plane. We're in the c plane, so we want to
+display certain parameter values. Typically, if you want to see
+the entire Mandelbrot set, you choose something like the set of all c
+values whose real part is between -2 and 0.75, and whose imaginary
+part is between -1.5 and 1.5. That will give you a large enough window
+to see the entire Mandelbrot set. As before,
+you're going to pick a largest number of the durations that you'll
+allow the computer to check. The computer can only check
+finitely many iterations. At some point, it has to stop. The larger you choose this
+number max iteration, the more accurate your picture will be, but
+also the slower the calculation will be. You can start with something like
+maximum number of iterations equal 100. Especially if you start with a large
+window like the one given above here. Once you start zooming
+into the Mandelbrot set, you choose windows that only show
+portions of the Mandelbrot set, or proportions of the boundary where
+behavior is even more interesting. You want to choose a larger and
+larger value for the maximum number of iterations. Now for each pixel on your screen, you're going to choose a parameter
+that corresponds to that pixel. This is very similar to when we
+were calculating Julia sets. If this is your screen, And here's this window that you pick,
+the window of parameter c, you're going to have to make the pixels correspond to
+the parameter values in your window. Once you have figured out what
+parameter c you're looking at, we'll be looking at the corresponding
+quadratic polynomial z squared + c. You need to next calculate the iterates
+of 0 under this polynomial. So f(0) = c,
+f(f(0)) = c squared + c, f(f(f(0))), = (c squared + c) quantity squared + c,
+and so forth. So whenever you have calculated one
+iterate, to get the next iterate, you square the number you obtained from
+the previous step and add c to it. If one of these iterates satisfies that
+it is bigger than 2 in absolute value, then you know this point does not
+belong to the Mandelbrot set. And you can color the corresponding
+initial pixel white. If you reach the maximum
+number of iterations, maxiter, without having left this ball
+of radius 2 centered at 0, then there's a good chance that the parameter
+c does belong to the Mandelbrot set. And you color the corresponding
+pixel that you began with black. This is the picture that you get this way. It's a black and
+white image of the Mandelbrot set. All the points that
+are colored white out here are points that are not
+in the Mandelbrot set. And the black points are points
+that are in the Mandelbrot Set. Again, you can use different colors for
+those parameters c for which 0 does escape to infinity under iteration, depending
+on how quickly the escape happens. So, for example,
+what you could do is, if f(0), which is c,
+is greater than 2 in absolute value, then color of the corresponding
+pixel in a zero color you chose. Otherwise, if f(f(0)) is the first one
+to get bigger than 2 in absolute value, color the corresponding
+pixel in color one. Otherwise if f(f(f(0))) is
+the first one that is greater than 2 in absolute value,
+use color two, and so forth. And only if all fn(0) remain less than or equal to 2 in absolute value, then
+color the corresponding pixel black, or whatever other color you choose for
+your Mandelbrot set. Zooming into the Mandelbrot set and
+coloring parameters by escape time yields beautiful pictures as we see
+in these following examples. [MUSIC] Here are some properties
+of the Mandelbrot set. The Mandelbrot set is a connected set. It's all in one piece. It took a while for
+this to be actually proved. The first images of the Mandelbrot set
+were not as accurate as the ones that we can calculate with today's
+powerful computers. And it didn't necessarily
+look connected at first. But it has been proven to be connected
+by Douady and Hubbard in 1982. The Mandelbrot set is contained in the
+disk of radius 2 centered at the origin. The boundary of the Mandelbrot
+set is very intricate. This is where you will find
+the most beautiful zooms. Zooming into locations close to
+the boundary gives you more and more beautiful pictures. Moreover, for c values near
+the boundary of the Mandelbrot set, their Julia sets have
+many different patterns. And here are some examples of
+what patterns you might see. The boundary of the main cardioid
+is given by the following equation. You see a picture right here
+of what that looks like. Writing theta, this exponent theta over
+here, this angle theta, as 2 pi alpha, we can distinguish whether alpha is
+a rational number or an irrational number. And it turns out,
+whether alpha is rational or irrational makes a big difference
+in what the Julia set looks like. Let's start with a c value of the form one-half e to the 2 pi i
+alpha- one-fourth e to the 4 pi i alpha. So on the main boundary of the Mandelbrot
+set where alpha is a rational number. So if it's a rational,
+it means it's a quotient. It's a fraction of the form p over q,
+where p and q are simply natural numbers. The parameter c is then
+an attachment point of another bud of the Mandelbrot set. And the Julia set looks similar to the
+Julia set for parameters within that bud. Let's look at an example. Let's look at alpha = one-half. Then c, if you plug in alpha = one-half, c becomes one-half times e to
+the 2 pi i times one-half. So one-half e to the pi i- one-fourth
+e to the 4 pi i times one-half. So one-fourth e to the 2 pi i. E to the pi i is -1, so
+that gives us a- one-half and even the 2 pi i is 1, so- one-fourth. So, we get -0.75. And that's this point right
+here that I colored in red. And as you know, in the Mandelbrot set,
+there's another bud here. And then there's another here,
+and another here. But this entire bud is attached
+at this attachment point and the Julia set looks very similar
+if you move within this bud. If you move parameter values within
+this bud and calculate the Julia set, they all look something like this picture
+that you can see here on the right. Here you can see the Mandelbrot set. And we're going to zoom in around
+the parameter value -0.75, this value that we just looked at before
+and whose Julia set we just looked at. You can see successive zooms here,
+and see how beautiful and intricate the pictures get if you zoom in
+around the boundary of the Mandelbrot set. Let's next look at a c value of the same
+form, but alpha is an irrational number. So there are no values p and q for
+which you could find alpha is p over q. So in your sets for such values,
+look more intricate and they come in several flavors. Here's a first example. For alpha = 1 + root 5 over 2,
+that's an irrational number. Then you can calculate the corresponding
+c value just by evaluating this equation up here. And for
+the corresponding f(z) = z squared + c, the interior of K has
+a so-called Siegel disk, in which iteration looks like
+a rotation by angle alpha. The filled in Julia set
+has these little disks. My picture's not entirely accurate, but you can see that there's
+rotations going on here. So under iteration, the iterates
+move along circles right there. Many points in the boundary
+of the Mandelbrot set are so-called Misiurewicz points. A point c is called a Misiurewicz
+point if the orbit of 0 under f(z) = z squared + c is pre-periodic but
+not periodic. We had seen before that the point is
+pre-periodic if it moves around for a while under f. But eventually it enters a periodic orbit. And a periodic orbit could be of order 2,
+like the one I drew here, or It could be something like this,
+Of a higher order. But the point is pre-periodic
+if it is not itself periodic. So the orbit does not return
+to this point itself, but it enters the periodic orbit
+after a number of iterations. An example is c = i. Then f(z) = z squared + i, and the orbit of 0 under f
+is given by 0 f(0) is i. f(i) is i squared + i, so that's -1 + i. f(-i) + i is -1 + i quantity squared + i. And you can check that that equals -i. f(-i) is -i squared + i, which is -1 + i. And we're back to this point that we
+were earlier inside the iteration here. But we did not repeat the point 0 in i. We started repeating at -1 + i. Clearly, Misiurewicz points must belong
+to the Mandelbrot set because the orbit of 0 under the function f(z) = z squared +
+c remains bounded because it's periodic. Here are some properties
+of Misiurewicz points. The Julia set is equal to
+the filled-in Julia set. In other words,
+the filled-in Julia set has no interior. Misiurewicz points are dense in
+the boundary of the Mandelbrot set. That means no matter where you look,
+you'll find them. You can zoom into the boundary of the
+Mandelbrot set wherever you want to and you'll find tons and
+tons of Misiurewicz points. In fact, you can zoom in as far as
+you want to and there are still infinitely many, many Misiurewicz points
+in any window that you zoom in to. And, the Mandelbrot set is
+self-similar under magnification near Misiurewicz points. Now, note the Mandelbrot set is
+quasi-self-similar everywhere. Small, slightly different versions
+of itself can be found at arbitrary small scales. But near Misiurewicz points, one can
+actually prove that it is self-similar. You zoom in, and you see exact replicas
+of the big picture in small scales. Here's the Julia set for c = i. It's called a dendrite, and it looks very much like
+the Mandelbrot set looks near z = i. We'll look at that in the next pictures. Here you can see the Mandelbrot set, and I've highlighted the point z = i,
+so the parameter value i. And we zoom into the Mandelbrot
+set around this point. And you can see that the Mandelbrot
+set looks like a dendrite. And it is very self-similar. We keep zooming in and zooming in,
+and it keeps looking exactly the same. And it looks just like
+the Julia set looked for c = i. Let's finish with one of the big
+outstanding conjectures in the field of complex dynamics. It says the following,
+the Mandelbrot set is locally connected. What that means is,
+it's a term we have not discussed before. It means that for every parameter
+c in the Mandelbrot set, so, for example, this one right here. And every open set v that contains c. So some open set around it,
+there exists an open set U, possibly smaller than the original
+open set that you picked, so that still contains
+your parameter such that the intersection of U and M is connected. Now this boundary of the Mandelbrot
+set is rather intricate. So you could imagine that you,
+by choosing a small, open set, accidentally pick two parts that
+are not really connected looking, because the Mandelbrot set wiggles so
+much. It goes in and out and in and out. So you could imagine accidentally
+picking a set like this, where you just get disconnected pieces. But this conjecture says,
+no matter where you are, how far you zoom in at every level, around
+every parameter, you're going to find a little open set that contains
+a connected piece of the Mandelbrot set. It will never happen to you that
+your Mandelbrot set falls apart. This is an outstanding conjecture which
+means it has not been proved to be true. It is known that the Mandelbrot
+set is connected, but it is not known that it
+is locally connected. This is considered one of
+the big outstanding conjectures in the field of complex dynamics. The reason why this is such
+an important conjecture goes beyond the scope of this course.

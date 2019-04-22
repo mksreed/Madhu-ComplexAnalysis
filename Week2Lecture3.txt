@@ -1,0 +1,231 @@
+Welcome back to Lecture 3 in
+our second week of our course, Analysis of a Complex Kind. Today we'll learn about iteration
+of quadratic polynomials, and finally we'll learn about Julia sets. So, we'll be looking at polynomials
+of the form f(z) = z^2 + c, where c is a constant that
+is in the complex plane. And we wanna study how these
+functions behave under iteration. How that behavior depends
+on this constant c. Let me remind you what
+we mean by iteration. We're gonna look at f of f of z and f of f of f(z) and so forth, and
+we had short-hand notations. We called this f2 and this was f3 and
+we'll look at f4 and f5, and we'll make the sequence go on and on and
+on and look at higher and higher iterates. And we wanna understand how
+the behavior of the iterates depends on the constant, c. Now you're gonna ask what about
+other quadratic polynomials? Why just z^2 + c? Shouldn't we be more generally
+looking at p(z) = az^2 + bz + d? That's what the general
+quadratic polynomial looks like. Well it turns out, for
+each polynomial az^2 + bz + d, you can actually find exactly
+one polynomial of the form z^2 + c that behaves
+the same under iteration. So there's a special constant
+c that depends on a, b and d, so that these two
+polynomials behave the same. So what do we mean by that and
+why is that true? Well it turns out they're
+conjugate to each other, what that means is the following. So given a,b and d,
+to form one of these polynomials up here, we can let c be a x d+ b
+over 2- d/2 quantity^2. Then you can find this function phi,
+which is just a linear function. a x z + b/2. And it turns out that p
+of z is the same as phi inverse of (f(phi(Z))). So what exactly does that mean? We have a complex plane right here and
+we have p acting there. And that maps the complex plane
+to some other complex plane. On the other hand,
+we have this function phi. So this function phi. We're going to draw there here, and it maps that complex plane
+to some other complex plane. Phi.
+And we'll draw the same picture right here. Maps the complex plane to
+some other complex plane. And down here we have the function f. And if we choose the constant c correctly we can follow a point
+in two different ways. If you start with the point z up
+here you can find p of z we're just plugging that point
+into the function p or you trace it down here
+by first applying phi. So here's phi of z in
+the orange coordinate system. Then applying f to get over here. So now down here you have f(phi(z)). And then going back up with
+the inverse of this function, phi. So p(z) is phi inverse of f(phi(z)). That's what it means for p and f to be conjugate to each other
+under the following function phi. Again, we had p of z is phi
+inverse of f of Phi of z. f is this nice function. f of z is z^2 + c. p is a more general quadratic polynomial. So, why is that useful? Short-hand, we all write p is = phi
+inverse composed with f composed with phi. That's really what this means. Here's the miracle that
+happens integration. Let's look at p composed with p. This is the kind of function
+you'd want to look at if you look at the integration of p. Well p itself is phi inverse
+composed with f composed with phi. And the second p is also phi inverse
+composed with f composed with phi. And what you'll notice what happens,
+there's a phi from the first function, and then there's a phi inverse in the second
+function that clash right into each other. But a function that's inverse under
+composition, they cancel each other out. So you can get rid of these two middle
+terms, and this simplifies to phi inwards composed with f, composed with f,
+composed with phi. So, in other words, the second iterate
+of p can be found by taking the second iterate of f and conjugating it with phi. Similarly, the third iterate of p is the
+third iterate of f conjugated by phi and so forth. If we wanted to understand
+behavior under a duration of p, we might just as well understand
+behavior under the duration of f. And then just conjugate that,
+to get back to p. And therefore,
+it suffices to study the duration of quadratic polynomials of this
+more simpler form z^2 + C. The Julia set is named after
+the French mathematician Gaston Julia who lived 1893 to 1978. And it is defined to be the set of
+all those points z in the convex plane for which the behavior of
+the iterates is chaotic in a neighborhood. We'll have to define what that means. So for a fixed c, we fix a c and f(z)= z² + c we define all those z's
+that we can plug into this function so that the iterates behave chaotically,
+and we'll define what that means. The Fatou set of this function is
+named after the French mathematician Pierre Fatou, who lived 1878 to 1929,
+and is the set of those z for which the iterates
+behave normally in a neighborhood. These two sets are kind of
+opposites of each other. The Julia set is the set where
+the iterates behave chaotically, the Fatou set is the set where
+things are pretty normal. What does that mean? When we say the iterates
+behave normally near z we mean that nearby points remain
+nearby under iteration. Suppose you have one point and
+another one that's near by, and we want to track what happens to
+these points on their iteration. So where does this point
+get mapped under f? And where does this one
+get mapped under f? So suppose this one goes here,
+and then it goes here. You keep applying f so
+maybe next time it goes here, and then maybe the next time
+it goes there, and so forth. Now the iterates behaving normally means
+that a point that used to be nearby kind of remains nearby. So when you track this
+point under iteration, it doesn't behave very
+differently from the pink point. Their orbits stay nearby under iteration
+as the pink orbit moves up there, the green one kind of falls along. They can vary a little bit, but
+they kind of staying nearby to each other. That's what it means to behave normally. On the other hand,
+behaving chaotically near a point means we start somewhere and you can find
+points nearby, like one here and maybe one over here that do completely
+different things from each other. So that one goes there, and
+this one goes over here. And in the next step this one goes there,
+and this one goes here. So they behave totally
+differently from each other. And if you can find points like that
+in any ever so small neighborhood of the original point, then we say that
+point is a locus of chaotic behavior. This is best understood in some examples. Let's look at c = 0. So that means that
+the quadratic polynomial we want to understand is f(z) = z squared. We already know what the iterates are, we
+calculated that in the previous lecture. The nth iteration of f is fn(z) = z(2nth). If we write z in polar
+form as re to the i theta, we see that fn(z) is then r to the n
+times e(i times 2 to the n theta). And so we can understand quite simply
+what happens under iteration here. If z is less than one,
+then the absolute value of fn of z, which is just r to the 2 to the n. And if r is less than one, r to the 2
+to the n is a sequence of complex numbers that converges to
+0 as n goes to infinity. And so by one of our facts about
+convergence of complex numbers, this implies that fn of z goes
+to 0 as n goes to infinity. So if you draw the circle of radius one,
+if you were to pick a point inside the circle under
+iteration, you know, it might move around. But eventually,
+it's gonna hone in on the origin. It's gonna get closer and
+closer to the origin. So it's gonna spiral its
+way toward the origin. And that is true for
+any point that you start with. So if you start with this point. It'll also eventually get closer and
+closer to the origin. On the other hand, if z is greater than
+one, so if you have a point out here, then fn(z), which is z2n, and z is now a number bigger
+than one, if you raise a number bigger than one to higher and higher powers,
+that number goes off to infinity, and so we say that fn(z) goes to
+infinity as n goes to infinity. This might be happening like this. The radius gets larger and larger and
+eventually we're going off to infinity. Finally, if the norm of these equal to 1. So if you start with a point that lies
+on the unit circle, like this one right there, then z is just of the form e
+to the i theta, because r is equal to 1. If fn of z is equal to e
+to the i 2 to the n theta. And so the norm of fn of z is 1 for all n. So it's just gonna rotate around and
+around, depending on what the value of n and
+theta. So this is just gonna keep
+going around here, and stay on this circle of radius one. However, what happens to nearby points? We notice that in any little disk
+around a point, Of norm one. There are points w whose norm
+is bigger than one, and so for which the iterations go off to infinity. And other points w whose absolute
+value is less than one, and for which the iterates go to zero. Let me draw a picture to
+make this entirely clear. Here's that circle of radius one. And let's pick a point on that circle. Then any small neighborhood around
+that point contains points inside. Those points will want to go to zero,
+and it contains points outside. And those points go off to
+infinity under iteration, and so even very nearby points behave
+very differently under iteration. The ones inside go to 0. The ones outside go off to infinity. Therefore, we say the unit circle, so
+the orange 1, the circle of radius 1, is the locus of chaotic behavior for
+the integration of this function. Whereas those z's whose opposite
+values are bigger than 1. But, the iterates
+are attracted to infinity and those z's where the absolute
+value of c is less than 1 where the iterates are attracted to 0,
+form the locus of normal behavior. Because no matter where you are, you can
+find points nearby that behave the same. They also go off to infinity and
+they walk off to infinity together or inside here,
+they both go to zero together. We write that Julia set is the set of all
+z whose absolute value is equal to 1 and the Fatou set is all those z's
+whose absolute value is bigger 1, Union whose absent value is less than one. More generally now let's look
+at f of z = z squared plus c. The set of all those z's that are attracted to infinity under
+iteration gets a special name. It is called the basin of
+attraction to infinity. And we call it A of infinity, so
+it consists of all those z's for which the iterates go off to infinity. In the previous example that was
+the outside of the unit circle. Here's a theorem,
+this set A of infinity, the base and the protraction to infinity,
+is an open connected and unbounded set. It is a part of the Fatou set of f. The Julia set coincides with the boundary
+of this basin of attraction to infinity, and that boundary is a closed and
+bounded subset of C. What did that theorem just tell us? It said the Julia set is a closed and
+a bounded set. The Fatou set is open and unbounded and
+contains the set A of infinity. And it's also true that the Julia set and
+Fatou set have absolutely nothing in common with each other and both sets
+are completely invariant under f. That means that when you take
+a point in the Julia set and map it with f, it remains in a Julia set. You take a point in the Fatou set and map
+it with f, it remains in the Fatou set. Let's look at another example. Let's look at f(z) = z-squared- 2. It's pretty hard to calculate and
+understand the iterates of this function. Let's just get started. If you try to calculate f(f(z)),
+it already gets pretty complicated. That is f(z squared -2). And the function f takes whatever
+argument you stick in there and squares it and then subtracts 2. So it gets really
+complicated rather quickly. It's gonna be hard to understand
+the iterates by looking at them this way. But there's a trick. We can conjugate again. We're gonna conjugate f with the function
+phi(w) given by w + 1 over w. So let's try to understand what that does. Phi maps the outside of the unit disc to C minus the closed interval from -2 to 2. Let's draw a picture. Here's the unit disk. And this function, phi, takes a point and
+adds to it its reciprocal, we claim takes the outside of this unit disk and
+maps it to the whole complex plane. The only exception
+the interval from -2 to 2. So this is the only excluded parts, it maps it everywhere but
+this interval from -2 to 2. How is that useful? We want to conjugate f with this function. So we want to look at phi inverse
+composed with f composed with phi. So let's draw another picture. Here's again the outside
+of the unit circle. And that can be mapped with phi to
+the outside of this interval from -2 to 2. Now it turns out the function f
+maps the outside of the interval from minus two to two, to the outside
+of the interval from minus two to two. You can check this quite easily. If you plug in some real numbers for
+example, then you see that the interval for -2 is mapped to itself onto
+the front of x squared- 2. For example, if you plug in 2,
+you get 4- 2 which is 2. If you plug in -2, you also get 2. If you plug in 0 you get -2. So you get a pretty quick idea that
+this function maps the interval from -2 to 2 to the interval from -2 to 2. Everything that's not in that interval
+to everything that's not in the. So if you apply the function f here. It maps it to the outside
+of that interval again. Now that means, once we applied phi here. We can then apply phi inverse. Phi maps the outside of the unit
+circle to the outside of the interval. If we apply f, we're still on
+the outside of the interval, so we are allowed to apply phi inverse. And get back to the outside
+of the unit circle. If we follow a point out here under phi
+that point might get mapped over here, under f it might end up over here, and
+then under phi inverse maybe over here. And we can then also look at the shortcut. So what did this point really do? How did this point move by going with phi,
+with f, and then with phi inverse? This function over here is the function
+phi inverse composed with f, composed with phi. And it turns out that function is much
+easier to look at than the function f. Let's see what that function is. F of z was z squared- 2. Phi was the function w + 1 over w. And we were trying to understand what
+is phi inverse of f of phi of w. We'll calculate it. Here is f of phi of w. So, we'll start by just calculating
+this inside part, f of phi of w. We take the function f and
+we stick phi(W) in for z. So that's (phi(W) quantity squared- 2. But phi(W) is W + 1 over W so
+we end up with W + 1 over W squared- 2. Let's multiply through. This gives us w squared + 1 over w squared plus 2 times w times 1 over w,
+and there's the- 2. We notice that 2 times w times 1 over w,
+the w's cancel out. So this is a 2 and there's another 2. So this whole term goes away. So we are left with W
+squared + 1 over W squared, which is actually phi of W squared. So f(phi(w)) = phi(w squared) and that means we can just bring this phi
+to the other side of the equation. Phi inverse of f of phi of w is w squared. This function that we're interested
+in the shortcut is a real shortcut. It's the function w squared
+which we already understand. Let me draw that picture for you again. We understood that the outside of the unit circle gets snapped under the function phi to the outside of
+the interval from -2 to 2. F takes the outside of
+the n over -2 to 2 and maps it to the outside of the integral for
+-2 to 2. And we would like to understand
+how exactly it does that and what it does under iteration. Phi inverse still maps the outside. Of the interval for
+-2 to 2 to the outside of the unit circle. And we were looking at
+the shortcut over here. And that shortcut is the function
+g of w is equal to w squared. If you start with a point w out here and
+trace it through. Here's phi of w,
+then down here somewhere is f of phi of w. And then back here, this point
+becomes phi inverse of f of phi of w. And, we just showed that it's the same
+thing as simply saying w squared. So, when we conjugate
+the function f that we want to understand with this function phi. We end up with a function
+g of w equals w squared, which we already understand
+under iteration. So here's our situation. F of z, z squared- 2,
+phi is this function w + 1 over w, and we just calculated that phi inverse
+of f of phi of w is just w squared. Or, if you wanted to solve that for f, we
+bring the two phis onto the other side of the equation so, bring the phi
+inverse here and bring that over here. Then you get that phi of g of
+phi inverse of z is f(z) and g is that function of z squared. So on the outside of the interval
+from minus to the 2, the function f that we want to understand,
+behaves exactly like the function g behaves on
+the outside of the closed unit disk. But, on the outside of the closed
+unit disk, the iterates of the function g just go to infinity. That's part of the Fatou set. And so, therefore we can conclude that
+the outside of the interval from -2 to 2 is part of the Fatou set for
+the function f and is actually the set that gets
+attracted to infinity under f and therefore A of infinity the base
+of attraction of infinity for the function f is everything but
+the closed integral from -2 to 2. Since we know that the boundary of
+this set gives us the Julia set, we know the Julia set is
+the closed interval from -2 to 2. We have looked at two examples so
+far, and found their Julia sets. We looked at f(z) = z squared, and found the Julia set is the unit circle,
+and we looked at z squared- 2, and we found the Julia set is the closed
+interval from -2 to 2 on the real axis. Turns out, these two examples are rather exceptional
+in that their Julia sets are smooth. The unit circle is such a nice, smooth curve, the interval for
+-2 to 2 is a smooth line. It has no wiggly-ness and
+then no crinkles. It turns out they are the the only
+examples amongst all z squared + c with smooth Julia sets. So c = 2 and c = -2 are the only
+parameters that give us smooth Julia sets. Here are some more pictures
+of other Julia sets and we'll learn how to create
+these during the next lecture. [MUSIC]

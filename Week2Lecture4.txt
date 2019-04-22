@@ -1,0 +1,207 @@
+Welcome to our fourth lecture in
+the second week of our course, Analysis of a Complex Kind. Today, I'm going to show you how to
+find and plot and craft Julia sets. Recall that we're looking at
+polynomials of the form of f of z equals z squared plus c,
+where c is a coincidentally complex plane. And we're trying to find
+the locus of chaotic behavior. Those are all those, z is in the complex
+plane that under iteration kind of behave chaotically, so
+where the iterates don't stay together. The Julia set we found is
+the boundary of A of infinity, and A of infinity was the basin
+of attraction to infinity. All those points z in
+the complex plane that go off to infinity under iteration of the function. So, how do you find A of infinity and
+therefore its boundary with the Julia set? Let's start by finding
+the opposite of A of infinity, mainly all of those z for which
+the orbit stays bounded under iteration. So, all those zs, so you can apply
+f as many times as you want to, but they never run off to an infinity. That's called the filled-in Julia set. Let's look at some examples. f of z equals z squared. We've looked at this function during
+the last lecture, this is the case where c is equal to 0, and we found that the Julia
+set is the circle or radius one. Now, we also know that points outside
+of that circle go off to infinity under iteration, and inside the unit circle
+are attracted to zero under iteration. So, all points on the circle and
+inside the circle do not go off to infinity under iteration,
+remain bounded in fact under iteration, and therefore form the filled-in Julia set
+for the function f of z equals z squared. We also looked at the function f
+of z equals z squared minus 2. So, this is the case where
+the constant c equals minus 2. And we found out that the Julia set
+is the integral for minus 2 to 2, and we also found that all points outside of
+that integral get attracted to infinity, so belong to A of infinity. So, the filled-in Julia set
+is the same as the Julia set, namely the integral for
+minus 2 to 2 in this case. Let's look at another example. f of z equals z squared minus 1, so the
+case where the constant c equals minus 1. What is the filled-in
+Julia set in that case? Let's go find out. Again, we're looking at f of
+z equals z squared minus 1. So, that's the case where this
+constant c is equal to -1. We want to find the build-in Julia set, so all those point z that remain
+bounded under iteration. So let's check some
+orbits to get a feeling. For example, when z is equal to 0, then f of z is 0 squared minus 1 so
+that's minus 1. What's f of f of z? Well f of f of 0 is f of minus 1, because we already calculated
+that f of 0 is minus 1. So, we just need to apply f to minus 1. What's f of minus 1? That's minus 1 squared,
+which is 1 minus 1, so a 0. If we apply another f to that,
+we get f of 0, which is minus 1. If we apply another f,
+we get f4 of 0 which is 0. And so the orbit just bounces back and
+forth between 0 and minus 1. 0 gets mapped to minus 1 under f,
+minus 1 gets mapped back to 0. 0 gets mapped to minus 1, minus 1 gets
+mapped to 0, 0 to minus 1, and so forth. It just bounces back and
+forth between 0 and minus 1. We call this a periodic orbit because
+it just keeps repeating zero, minus one, minus one, zero, and so forth. It's a periodic orbit and the period is two because there's
+exactly two elements in that orbit. And such a point clearly needs to
+belong to the filled-in Julia set because the orbit never
+runs away to infinity. It stays between 0 and negative 1. Let's look at another point z,
+look at the point z equals 1. 1 gets mount under f to 1 squared,
+which is 1 minus 1, that's 0. 0 get's mapped to negative 1. As we found before, negative 1
+gets mapped to 0, 0 to negative 1, negative 1 to 0, 0 to negative 1. So, 1 itself isn't a periodic orbit
+because the orbit never returns to 1. It is called a pre-periodic orbit. Here's a picture of what happens. There's 1, and it's mapped under f to 0, and 0 is mapped under f to negative 1, and negative 1 is mapped back to 0. 0 is to negative 1, negative 1 to 0. So, this is a graphical picture. Here is the periodic orbit, and
+1 enters that periodic orbit. So, it's pre-periodic, and then,
+it's part of that periodic orbit later. Clearly, 1 also belongs to the filled-in
+Julia set because this orbit stays very bound,
+it never goes off to infinity. Look at another example, z equals 1 plus square root of 5 over 2, what is f of z? F of z is z squared, so 1 plus square root
+of 5 over 2 quantity squared, minus 1. Let's multiply through. 1 plus square root of 5 quantity squared
+is 1 plus 2 times square root of 5 plus square root of 5 squared which is 5. We squared the denominator as well,
+which keeps us this 4, and then, we need to subtract 1. Let's find the common
+denominator which is 4. So, we subtract 4 in the numerator,
+we make this 1 into a 4 divided by 4. And we are left with 2 plus
+2 squared of 5 over 4. That simplifies to 1 plus square root of 5
+over 2, but that's the z we started with. So, we found a point z,
+namely 1 plus root 5 over 2, that satisfies that f of z equals z. Such a point is called a fixed point
+of f because f takes that point and maps it to itself, it's fixed under f. Has to belong to the filled-in Julia
+set as well because the orbit stays very bounded, never leaves the point c. So far, everything we've tried
+belongs to the filled-in Julia set. Let's find some more orbits. How about z equals negative 2? Negative 2 squared is 4 minus 1, that's 3. 3 squared is 9, minus 1 is 8. 8 squared is 64,
+minus 1 is 63, and so forth. It looks like this is an orbit that
+has a chance to go off to infinity. So we think that negative
+2 belongs to A of infinity because that just keeps on
+getting bigger and bigger and bigger. How about z equals i? i squared this minus 1,
+minus 1 is minus 2. Minus 2 squared is 4, minus 1 is 3. And we notice, wow, we're in the same
+picture as we were in before. We started with i instead of
+starting with negative 2, but after that, we ran into the same
+orbit that we were in 4. So, if minus 2 belongs to A of infinity,
+so does i. But how do we know for sure that
+the orbit of -2 goes off to infinity? It seems pretty clear, but
+it would be nice to know for sure. One can actually show that
+if x is on the real axis and smaller than -1 + root 5 over 2 or bigger than 1 + root 5 over 2,
+then it belongs to A(infinity). So that was our fixed point,
+1 + root 5 over 2, that was the point that was fixed under f. And here is it's negative,
+-1 + root 5 over 2. That is not a fixed point of f but
+it's the negative and it's mapped onto the same point as 1 + root 5 over 2
+because when you square this function and then subtract 1, you're also mapped
+to this point that's mapped here and this point is mapped to itself. If you are either out here or back here, all those points go off to
+infinity under iteration. More generally, if z is in C, whose
+absolute value is greater than 1 + root 5 over 2,
+even that belongs to A(infinity). So if you draw a circle here through
+these two points centered at the origin, then anything outside of that circle,
+Belongs to A(infinity). Even more generally,
+if z is a point in the complex plane such that one of its iterates
+has absolute value greater than that circle of radius
+1 + root 5 over 2, for some n,
+then that z itself belongs to A(infinity). And a similar condition holds for
+general quadratic polynomials of the form z squared + c, not just for
+the one, z squared- 1. And the theorem is as follows. Suppose f(z) is z squared + c,
+and we calculate a radius R, which is calculated similarly
+to the previous radius up here. 1 + square root of 1 + 4 times
+the absolute value of c over 2. We had z equal to negative 1,
+the absolute value of c is 1, so that gives you a root 5 here, so 1 + root 5 over 2 is exactly
+the radius that we obtained that way. Suppose that z0 is a point in C,
+if for some n, the nth iterative of z0 has
+absolute value greater than this R, then the iterates go off to
+infinity as n goes to infinity. In other words,
+z0 belongs to A(infinity) and not to K(f). Well, that sounds like a condition the
+computer could check and indeed it can. So here's an algorithm to
+find the filled-in Julia set. Given a value of c, calculate that radius, 1 + square root of 1+ 4 times
+the absolute value of c over 2. Choose a window of z values
+that you want to check. So find some a, and
+some b, and a c, and a d, and you want to check a window
+like this of z values, and you want to check
+which of these z values belong to the filled-in Julia set. Typically, you would want something
+rectangular that is centered around the origin and typically you
+would want that ball of radius R to be part of that because the filled-in
+Julia set is typically contained in there. So you want the window bigger than
+that unless you want it to zoom in to your Julia set. But typically you want that window to
+be at least as large as this radius and probably you would want choose something
+symmetric around that radius but it's really your choice. The computer can't really
+check all iterates fn(z), so at some point it'll have to stop. So pick a largest number, maximum number
+of iterations, you can start with a 100, later on go up to a 1,000,
+it depends on how fast your computer is, you can go up to 10,000 even later on. So choose a maximum number of iterations
+up to which you want to check. The larger this number is, the more
+accurate your picture will get but the slower the calculations will be. So start with something small while
+you're still developing your program. For each pixel on your screen
+that you'd like to color, choose a point z in your window. So, you need to find a correspondence
+between your screen, And the window you chose,
+For your Julia set, where you had chosen that probably large
+enough to contain that ball of radius R. So for each point on your screen, you need to find the corresponding
+point z in your window. So your screen consists of pixels and for
+each pixel you need to decide how does that correspond to points in your window,
+something like this. This is a linear mapping
+that's not very hard. Once you have found the coordinates
+of your point z in your window, calculate its iterates. Find f(z), f(f(z)),
+f(f(f(z))), and so forth. If more of these iterates satisfies that
+its absolute value is greater than R, then you know this point
+belongs to A(infinity) and not to the filled-in Julia set,
+so color it white. If you've reached the maximum
+number of iterations, maxiter, without having left this ball of
+radius R, there's a really good chance that this point z belongs
+to the filled-in Julia set. It's not entirely clear, and so
+the larger you choose maxiter, the more certain you will be that this
+point belongs to the filled-in Julia set, to color this pixel black that
+corresponds to that point. This gives you an image of
+the filled-in Julia set. Let's look at some examples. Here you can see the filled-in
+Julia set for z squared- 1, that's the function we
+were looking at earlier. Here's the filled-in Julia set
+of z squared + one-fourth, so z is equal to one-fourth. It looks quite different from
+the previous filled-in Julia set. Here's yet another one, the one of z
+squared + i looks quite different yet again. And here you can see the Julia
+set of z squared + 1, it's a bunch of disconnected
+little pieces all over the place. The pictures we have produced so
+far of the filled-in Julia set, they're black and white. You've probably seen
+more colorful pictures. So if you wanted to produce
+a more colorful picture, you need to choose colors C0,
+C1, C2 up to C, however many iterations you're allowing your computer
+to go through and these are all colors in which you're going to color A(infinity),
+those points that escape to infinity. And then you need to pick an additional
+color for the filled-in Julia set, typically that additional color is black,
+but you can pick whatever you want to pick. Now, if z is greater than R, then you
+know right out from the start that that point belongs to A(infinity), so color it
+in the color C0, the first color it shows. Otherwise [INAUDIBLE] iterate. If the iterate is greater
+than R in absolute value, color the corresponding pixel and
+color C1. If it's not bigger than R, but
+its iterate is bigger than R, color the corresponding pixel and
+color C2 and so forth. So you are coloring in pixels
+depending on how long it takes the corresponding point z to
+escape that circle of radius r. The longer it takes, the closer your
+color gets to the color for maxiteration. Otherwise, if all of your f^n(z)
+stay within the ball of radius R, color the corresponding pixel in the
+chosen color for the filled-in Julia set. This gets you a more colorful picture. The larger this constant maxiter is,
+again the more detail you can see but the longer the calculation will take. If you zoom into the Julia set,
+so you can choose small windows. A higher precision is required
+to avoid round-off errors. Let's look at some examples. Here are some colorful
+examples of Julia Sets. And you can see their different natures. Here's one where you have
+a lot of black filled in, and here you can barely see the black parts. Here again,
+there's two only specks of black and lots of colorful things going on,
+and here as well. The Julias had this very
+scattered throughout this picture. And here, the Julia Set has these round
+features, and here it consists of specks. So, we notice the following in
+all the pictures we looked at. The Julia set is either in one piece or totally dusty. That leads us to the following
+definition we say the Mandelbrot set. It's the set of all those parameters c for which the corresponding Julia set
+is connected, so in one piece. So the parameter C belongs to
+the Mandelbrot set if the Julia set of f(z) = z squared + c is connected. In other words, the Mandelbrot set
+is the subset of parameter space, the subset of c-values, whereas Julia
+sets are always sets of z-values. They are both containing the complex
+plains, with this can get confusing. But the Mandelbrot said you should think
+about that as a set of parameter values. Whereas the Julia set you fix
+a parameter value c and then look at z-values and find out which of those
+z's remain bounded under iteration and which ones go off to infinity and
+where's the boundary in between. Let's look at some examples. 0 belongs to the Mandelbrot set
+because we calculated its Julia set. The Julia set for
+the function z squared which is the case when c is equal to
+0 was the circle of radius 1. A circle is a very connected piece. It's just in one piece. And so 0 belongs to the Mandelbrot set. When c = -2 we calculate
+its Julia set last class. We found that Julia set of z squared
+-2 is the interval for -2, 2. That's again a connected piece and
+so -2 so does belong to the Mandelbrot broad set. 1/4 seems to belong to
+the Mandelbrot Set as well according to the picture that we saw. Here is the picture again of
+the Julia Set of z squared plus 1/4. It's also called the Cauliflower set. It looks like it's in one piece,
+the boundary is in one piece, and therefore 1/4 belongs
+to the Mandelbrot Set. 1 on the other hand does not belong to the Mandelbrot set according
+to the picture that we found. This picture of the Julia
+set of f(z) = z squared + 1, looks like it's completely
+totally dusty and disconnected. We see all these little
+specs all over the place but there's clearly huge gaps in between. So this set is not connected and therefore the parameter 1 does
+not belong to the Mandelbrot set. Then how do you determine whether for a given c the Julia set of z
+squared plus c is connected? Is there a way we can have
+a computer perform this task? That's what we're going to
+study in the next lecture.

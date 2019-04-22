@@ -1,0 +1,362 @@
+Welcome to Lecture 2, in the second week
+of our course Analysis of a Complex Kind. In this lecture, we'll study sequences and
+limits of complex numbers. Both of these are topics necessary for us to understand Julia sets and the
+Mandelbrot set. So let's start with sequences of complex
+numbers. Consider for example the following
+sequence of complex numbers. This is for listing 1, 1 half, 1 3rd, 1
+4th, 1 5th, and so forth. It's a sequence of complex numbers. What happens as these numbers get further
+and further out to the right? If you were to graph these, we could graph
+the complex plain and say, say 1's here, 1
+half is here, 1 3rd here, 1 4th, 1 5th so these points
+seem to accumulate near the origin.
+Let's look at another example i, i over 2, i over 3, i over 4, and so
+forth. Where are those numbers?
+Well i is over here, i over 2 is here, i over
+3, i over 4, i over 5. So, these points are going to go on the imaginary axis, but again they seem to be
+getting awfully close to the origin as we go further and further to the right along the
+sequence. Let's look at another sequence, i minus 1
+half. Minus i over 3 and so forth, so i again is
+this point right here.
+Minus 1 half, that seems to be here. Minus i over 3 over here.
+1 4th, i over 5, minus 1 6th, minus i over 7. So these points kind of spiral around the
+origin but again. They're getting closer and closer to the
+origin. We say all these three sequences converge to zero.
+Informally, we say a sequence {sn} converges to a
+limit s if the sequence eventually lies in any (ever
+so small) disk, centered at s.
+This means that no matter how small a disk I draw around the origin in this example,
+for example eventually, far enough out to the right, every element of my sequence is going to be somewhere in this little
+disk. And if I were to choose a smaller disk, I
+just have to wait a little bit longer. And eventually, the sequence will be found
+inside that disc. How do you make this mathematically
+precise? We don't really need to have a mathematic
+precise notion, but I want to show you how to make this mathematically precise, in case
+you're interested. So here's the actual definition.
+A sequence {sn} of complex numbers converges to s, another complex number, if
+for every epsilon, this is going to describe the radius of
+that little disc we were talking about. There exists an index N, a point in the
+sequence from which on xn minus s is less than
+epsilon. So what is sn minus s?
+That is how far sn is from s. So if I were to draw a picture, and
+suppose s was not the origin necessarily, but suppose this is my limit, and I draw my circle of radius epsilon around
+that point, then s is the center of the circle. And if I want sn minus s to be less than epsilon, that means sn has to be
+inside this circle. So this definition simply makes
+mathematically precise what we want, and we want sn to be inside that disc of radius epsilon,
+far enough out along the c's. In this case, we also use the notation,
+the limit, lim, limit, of sn is equal to s. And we put n goes to infinity underneath
+that limit sign, to indicate what's the n that we want to
+go to infinity. Here's an example, so example from the
+previous page, the limit as n goes to infinity of 1 over n is equal to
+0. How would we show that? Well we would have to show that the limit
+is 0, which means no matter how small a disk of radius epsilon that shows around
+the origin, eventually my sequence is going to
+be in it. So I'm going to have to show that
+eventually 1 over n minus 0. You don't really have to write that down but I'm just going to write it down for
+completeness. Is less than epsilon for a given epsilon
+so we would pick some number epsilon. And by the way, this epsilon is again one
+of those Greek symbols and the mathematicians often use the Greek
+symbol epsilon to indicate a really small number. If you really want to confuse a
+mathematician, make epsilon a large number. So what does it mean for 1 over n to be
+less than epsilon? This actually simply simplifies to 1 over
+n, less than epsilon, and it can solve this
+equation. For which values of n is this true, that
+is true when n is greater than 1 over epsilon, so for
+my given epsilon. I calculate one over epsilon and then I
+just pick an index and that is bigger than that
+one over epsilon and I'm guaranteed from that index on, my entire
+sequence will be located inside this disc. Another example is the sequence 1 over n
+to some power p, p can be anything, it can 2s, 3, 4, it
+can be one half. So, for example, when p is equal to 2 the
+sequence we'd be looking at would be 1 over 1 squared, 1 over 2 squared, 1 over 3 squared and so forth, so 1, 1 4th, 1 9th.
+That sequence converges to 0 but also, when p is equal
+to 1 half. What's it mean to raise a number to the
+power of one half, it means taking a square root of
+that number. So in that case, the sequence would be one
+over square root of one, one over square root of two, one
+over square root of three and so forth and that sequence
+would also go to 0 and we can show that very
+similarly. To how we show the sequence one over n
+converges to 0. And in general, for any power P, you fix
+that power and the sequence will go to 8. It'll take it longer to go to 8, it'll be
+slower when P is a really small number, and it'll be faster
+when P is a large number. Furthermore, I could put a constant in the
+numerator, I could multiply the entire sequence by a complex number and it
+still would go to 0. Because anything that goes to 0 I can
+multiply it by 2 but it just takes twice as long to go to 0, it
+still goes to 0. Another example is the sequence of numbers
+q to the power n, where q is a number between 0 and
+1. So, for example, if q is equal to let's say 1 3rd, then the sequence we would be looking
+at is, 1 3rd to the power 1, 1 3rd squared which
+is 1 9th. 1 3rd cubed, just 1 over 27. 1 3rd to the 4th, which is 1 over 81, and
+so forth. So as long as q is a number less than one,
+whenever you raise that to a higher and higher power, the numbers will
+get smaller and smaller and smaller and again, they
+approach 0. If q was the number 1, itself, you would
+be raising 1 to the power n, that would be constantly equal to
+1, that would not converge to 0. And if q was bigger than 1, these numbers would blow up, definitely not
+converge to 0. More generally, if instead of a real
+number, q between 0 and 1, we plug in a complex number here, whose
+length is less than 1. That will still converge to 0 so, let's look at a picture of why
+that is happening. So, suppose here is the circle of radius 1
+and, my z is some number here. If I square this number z, what happens
+is, we square the distance to the origin, which makes
+that number smaller, because the distance from the origin is less than 1 to
+begin with and we double the argument, so maybe z squared
+will be over here. Z cubed, we're tripling the argument and
+even closer to the origin. Z to the fourth and so forth. So, these numbers will sort of spiral
+around the origin, getting closer and closer to
+the origin because the distance from the origin is just going to
+0 another example. Suppose we're looking at the nth root of
+10. So that sequence starts out with being the
+first root of 10. What's the first root of 10? Well, that's 10. The second root of 10 is just the square
+root of 10. So that's 3 point something then the cubed root of 10. So that's the number whose cube is equal
+to 10. So that's between 2 and 3 and the fourth
+root of 10, so that's a number, so when that raises
+the power of 4, it's equal to 10. You can see these numbers get smaller and
+smaller and smaller and they actually approach the number 1, for
+large enough value of N. And finally, the nth root of n that's an
+interesting sequence, and here we're not so sure where
+it really happens. Let's look at what happens for n is equal
+to 1, that's the first root of 1, so it's
+just 1. For n is equal to 2, we get the square
+root of 2, we know that's 1.4 something, then we get the cubed root of 3.
+The 4th root of 4, the 5th root of 5 and it's
+pretty unclear because the number with which we
+are taking are getting larger and larger, but we're also taking larger and larger
+roots of these numbers and this requires some more thought.
+What one can prove that, that sequence converges to 1.
+Here are some rules and facts about limits, one fact is
+that convergent sequences are bounded. Remember what it means to be bounded? That means the sequence is contained in
+some large disk around the origin. So why is that true, well here is our
+coordinate axes and suppose we have a sequence that
+converges to some point s. That means, for, any disc we choose around
+this point s, eventually, the whole remainder of the
+sequence will lie inside the disc of radius s. So, only a few elements of that sequence
+can be outside of the disc of radius s and that's only final the
+menu, so that's one largest one. And we can just pick a disc that's large
+enough, to contain all of these final [INAUDIBLE] elements, plus the disc around the point
+s, and that disc then shows us that the sequence
+is bounded. Another fact is that if you have two
+convergent sequences, one called sn which converges to s and one called tn, suppose
+its limits is t, then I can add these two sequences to each other, and
+the sum converges to s plus t. Let's look at an example, we know that if
+sn is equal to 1/n.
+Then that sequence converges to 0. We also knew that if tn is equal to say 1
+3rd to the n. Then tn also converges to 0. So now, according to this fact, I can add
+these two things up. I can look at s and plus tm which is 1 over m plus 1 3rd to the power n and together, this will still
+converge to 0. Another fact is that sn times tn will
+converge to s times t, so I could have multiplied these two sequences
+or any other two convergent sequences. And their product will converge to the
+product of the limits, in particular, I can
+multiply a convergent sequence by some number. And that new sequence will converge to the
+old limit times that number. I can also form the quotient of two
+sequences and it will converge to the quotient of
+the limits. Obviously I can't divide by 0 so I can't do that for the example we've been looking
+at above. 1 3rd to the n is no good, it converges to
+0 and so 0 in the denominator is not something that we
+would want. And so here we would need another example,
+something that converges to 1 for example. So let's apply these facts that we just
+learned and find some limits. Let's look at the sequence n over n plus 1
+well, n itself is not a convergence sequence X just gets
+bigger, 1, 2, 3, 4, 5. The sequence n plus 1 also gets bigger and
+bigger, so looking at it like this is not useful but, we can pull the n out of both numerator and
+denominator. And if we do that the numerator becomes 1 and the denominator becomes 1 plus 1 over
+n. And all of a sudden we find ourselves with
+a constant sequence in the numerator, which obviously
+converges to 1, because it's constant. And the denominator has the sequence 1
+over n, which we know converges to 0. We add to that the number 1, which is a constant sequence
+which is going to break up into 1. So, the denominator converges to 1. 1 divided by 1 is 1.
+So, the whole sequence converges to 1. So, here this denominator, we know
+converges to 1. the numerator is constant so it converges
+to 1. So, the limit of the quotient is 1. Here's another example again if we look at
+it in it's original form 3 n squared plus five
+divided by i n squared plus 2 i n minus 1, it's hard to see what the
+limit is. Because both numerator and denominator
+seem to go off to infinity. They're not bounded, they're not convergent sequences, convergent sequences
+are unbounded. But if I pull the n squared out of numerator and denominator, I need to do
+that correctly. I need to pull that out of each term, so
+the numerator becomes 3 plus 5 over n squared
+and the denominator becomes i plus 2 i divided
+by n. There's only one n here, so we need to
+pull the second n out right here, minus 1 over
+n squared. Now I know 1 over n squared converges to
+0, so 5 over n squared converges to 0, so the whole numerator converges to 3.
+In the denominator, I have i over n squared going to 0, I have 2 i over n going to 0 and so the denominator goes
+to i. So the whole limit is 3 over i which is not how we write complex numbers, we know
+by now. Imagine the only number is in the
+denominator, so this is equal to minus 3i so the limit of the sequence
+is minus 3i. Here's another example.
+n squared over n plus 1. Again, both numerator and denominator go
+to infinity, so we try to pull out an n. If I pull out one n, I have another n left
+in the numerator. The denominator is 1 plus 1 over n. So the denominator behaves really well.
+It converges to 1. So the denominator can be treated as
+almost equal to 1, a margin of n. However, the numerator gets bigger and
+bigger and bigger and bigger. And if I divide a really big number by a
+number that's almost 1. The really big number doesn't change a
+whole lot. And so this sequence is not bounded, it
+just gets bigger and bigger. The numerator is simply stronger than the
+denominator. The sequence is not bounded, and so it
+does not converge. By r fact, convergence sequence are
+bounded. Since this one is not bounded it cannot
+converge and, finally, let's look at this example 3n
+plus 5 divided by in squared plus 2yn minus 1. Again, let's pull up n squared out of both
+numerator and denominator, the numerator becomes then, 3 over n plus
+5 over n squared. The denominator becomes i, plus 2 i over n
+minus one over n squared. In the numerator, 3 over n goes to zero, 5 over n squared goes to 0.
+In the denominator, one over n squared goes to zero, 2 i over n goes to 0 I, ios
+constant, equal to i. So denominator goes to i, numerator to 0,
+o divided by i is 0. So this last sequence converts this as 0,
+thus n goes to infinity. Now let's consider the following sequence,
+i to the n divided by n. So i to the first power is just i divided
+by 1. For in a subsequent to two we get -1/2
+because i^2 is -1. When in subsequent to three, we get i
+cubed, which is -i / 3. For n = 4, we get i^4, which is one and so
+forth. So, we would like to apply our facts, but
+i to the power n times the sequence 1 over
+n. The sequence 1 over n, we know goes to 0 but the sequence i to the power n just
+hops around. One I minus one minus I, one I, minus one, minus I, it hops around. It never approaches just one point it's
+always in different places. That sequence does not converge, even
+though it is bounded, it never stays within a little
+disk of just one point because you just keep
+going and it will be outside of that disk. So, how do we treat this product?
+The sequence, it was our impression, converges to 0 because, you know, we
+started i and we have minus one half, minus i over 3,
+one fourth and so forth. The sequence seems to spiral itself
+towards 0. So, it seems to converge to 0, but how do
+we show that? Here's some additional facts; a sequence
+of complex numbers converges to 0 if and only if the sequence of absolute
+values converges to 0. Well, if you can take absolute values
+here, we're golden I to the n over n, the absolute value of i
+to the n is just 1. So, it becomes the sequence, 1 over n and
+we know that converges to 0. So, that's one way to show that the
+sequence converges to 0. This only works for converges to 0 however, the sequence of absolute values
+converging is not enough for convergence other sequence
+to some other number it only works at 0. Another fact is that a sequence of complex numbers converges to a limit if the real parts of the sequence converges
+to the real part of the limit and the imaginary parts converges to the imaginary part of
+the limit. So the real parts need to converge and the
+imaginary parts need to converge and that makes the
+whole sequence converge. Here's another really neat fact, you may
+have heard about this in Calculus, it's called the squeeze theorem. Suppose you have three sequences r n, s n
+and t n. And suppose they're all [INAUDIBLE] lined up so, r n's always the one at the
+bottom is less than or equal to s n, that's the one in the middle and less than
+or equal to t n in the one to the right. If you were to draw a number line, we
+would have r n, and then s n and t n. Now suppose that both r n and t converge,
+okay? So r n converes to some limit and t n
+converges to some limit. And suppose it's the number, suppose they
+all converge to a limit L. Well then sn who's stuck in between has no
+choice but to converge to L as well and that's what the
+squeeze theorem says and then here's the last fact. Sort of the equivalent of a sequence
+running against the wall, suppose you have a sequence that's
+bounded and monotone. Bounded means it's not going to go off anywhere and Monotone means it keeps
+getting bigger or, it keeps getting smaller, but
+you have to pick one of those two. So, this is about a sequence of real numbers, so, a sequence that keeps getting
+bigger. But you can't get go beyond then has to
+accumulate somewhere. It could accumulate at that wall, or maybe
+you, the wall is chosen too big, going to accumulate somewhere before the
+wall, and it certainly cannot run off to
+infinity. But it has to converge, so down the monotone sequence of real numbers
+converges. So let's apply these 2 facts to the
+sequence i to the n over n. I already showed you how to apply the
+first fact, i to the n over n, the absolute value of that
+is 1 over n, that goes to 0 and so the first theorem
+told us that i to the n over n must also go to 0. But now, let's look at real and imaginary
+parts. What is the real part of i to the n over
+n? Well, it depends. I to the n remember is just i1 and it's
+equal to 1. It's minus 1, 1 and it's equal to 2. It's minus i1 and it's equal to 3.
+It's 1, 1 and it's equal to 4. Again, i minus 1 minus i, 1 and so forth. So the real part could be 0, 1, or minus
+1. The real part is 0 in the i, minus i cases
+and it's 1 or minus 1 in the other two cases. And you know, I split it up here, when
+it's 0 when it's 1 and when it's minus 1, you can
+check that. And similarly, the imaginary part is
+either 1, or minus 1, or 0 and I wrote that down right here. So therefore, the real parts are always
+between minus 1 over n and 1 over n, and the imaginary parts as
+well. Since both 1 over n and minus 1 over n
+converge to 0, the squeeze theorem then implies that the real parts
+and the imaginary parts converts to 0, therefore forcing i to the n over n to
+converge to 0. We also need to talk about limits of
+complex functions, we say that a complex value function f has a limit l
+as z approaches to 0. If the values of f are near l. Se goes to z0.
+So that means, if this is a point L and the values of f
+have to be near L that means if I draw a small enough disc around L, and a disc of
+radius epsilon, then eventually, all the f of values are
+in that disc. If the z values were close enough to z0. So. I can find another disc around z0, such
+that if my z values are from within that disc, and the f of z values will be
+in the disc of radius epsilon. So if you wanted to make this precise, you
+would say, you know, for every epsilon, that's this disc
+around this unit, there's a delta, that's the second disc around the
+0's such that, whenever z minus is 0, less than delta, the z's are
+in the delta disc, then f of z minus l is less than
+epsilon. Of course you know f of z needs to be
+defined near z0 for this definition to make any kind of sense but we don't necessarily require f to be defined as z
+0. Use an example. Suppose f of z is the function z squared
+minus one over z minus 1. That function is not defined as z equals
+one because I will be dividing by 0. But we could ask, does f of z approach a limit as
+z gets close to 1? It's a little unclear well, let's look at
+that. We look at the limit of f of z as z
+approaches 1 and we notice, the numerator actually
+factors into z minus 1 times z plus 1 and we can cancel out one of
+these z minus one factors and we are left with the limit
+of z plus 1 as z goes to 1.
+But z plus 1 as z approaches 1 is basically 1 plus 1, which is 2, so this
+function has a limit of 2. And so it does have a limit even though the function itself is not defined at z
+equals one. Let's look at another example, suppose f
+of z is the function, argument of z, where argument is
+the upper case argument. Remember, the upper case argument of the z, is the angle that z forms with a
+positive real axis, and we have to pick the angle that
+is between minus pi and pi. So let's look at the argument of z as z
+approaches i, i is right here.
+And as z approaches i, no matter from where z approaches i so I can draw a whole
+little disc around i and all those Z values in here have an argument
+that's pretty close to pi over two. And the smaller I draw the disc, the
+closer all those arguments will be to pi over 2. So we say the limit, of the argument of z
+as z, approaches I equals pi over 2. How about the argument of z as z
+approaches one? One is over here and again, I can draw a
+small disc around 1. And the arguments above the real axis are
+going to be a little bit bigger than 0 and below the real access to
+the less than 0. But they're all pretty close to 0 around
+here. The smaller I draw my disc, the closer
+these arguments will be to 0. So the limit of the argument is 0. But now, let's look at minus 1, I'll draw a little disk around minus 1.
+What happens? For points in the upper half of this disk,
+the argument approaches pi. It's a little bit less than pi, but it's
+argument is pretty close to pi. On the other hand, for points in the
+bottom half of the disc, we measure negatively the
+argument is almost minus pi. So, down here, the argument is really
+close to minus pi, so if I make my disc smaller and smaller
+and smaller. Below the X axis the argument points to
+approach minus 5, but above the X axis, the argument wants to approach pi,
+they can't agree, so there is no limit. This limit does not exist. The previous facts about limits of
+sequences imply similar facts about limits of
+functions. I'm just going to very quickly list those
+and I'll remind you of those facts when we need
+them. If f has a limit at z0 then f is bounded that's just like a sequence that
+converges, needs to be bounded. If a function f approaches a limit L and a limit g approaches limit
+M. As z approaches to 0, then the sum of the
+two functions approaches L plus M, or the
+product of the functions approaches the product of the limits, and the
+quotient approaches the quotient of the limit, provided you're actually
+allowed to divide by the denominator. You, you can't be dividing by 0. Finally, a function is continuous if f of
+z approaches f of z 0, as z approaches 2 0.
+That's continuity at z 0, this definition implies a lot of
+things implicitly. So, we're saying that f needs to be
+defined at z 0. Because otherwise we couldn't be writing
+down f of z0 right here. We are also saying that f has a limit as z
+goes to 0, because we're saying f of z converts to
+something as z goes to 0. And finally, we are saying these two need
+to be equal because we're saying f of z doesn't just convert
+to some limit l. But that limit actually needs to be f of
+z0. So F needs to be defined at z0.
+It needs to have a limit as z goes to 0. And that limit needs to equal f of z0. You've probably seen definitions of
+continuity before, for functions from r to r that's often described as you can draw a function
+without picking up your pencil that's not quite accurate, there are some other functions that are continuous, but it's
+good enough for our understanding, you cannot
+have a function that makes a jump for example. That function would not be continuous
+because it wouldn't have a limit. And so a function that is continuous at,
+at a point Z0 needs to be defined there, have a limit and that
+limit is equal f of z 0. Examples of continuous functions are
+constant functions, the function f of z equals z, polynomials, f of z is equal to
+absolute value of z. And f of z is a polynomial divided by some other polynomials, but you only can look
+at points where the denominator is not 0, cause otherwise
+you'd be dividing by 0 and then you would not have a limit. So that's enough for today, for the next
+lecture we'll finally be ready to start talking about Julia sets of
+quadratic polynomials, which we just learned are
+continuous functions.
