@@ -1,0 +1,243 @@
+Welcome to week 2 in our course, Analysis of a Complex Kind. This is the first lecture and
+it's on complex functions. This week we will finally
+get to one of our big goals, Julia sets of quadratic polynomials. We'll also study the Mandelbrot set. We basically laid the groundwork
+last week for these two topics, but we need a little bit of more preparation. We need to study complex functions, and
+that's what this lecture is all about. And we need to study sequences and limits
+of complex numbers and complex functions. That's what the next lecture is about. After that, we will be ready to study
+Julia sets and the Mandelbrot set. In particular,
+we'll want to study functions and quadratic polynomials of this form,
+f(z) = z squared + c. So let's review briefly
+what a function is. A function in general is just a rule. A function f from A to B is a rule, that assigns to each element
+of A exactly one element of B. So for example, the function f from
+R to R given by f(x) = x squared + 1 is a rule that takes a real number,
+for example, 2, and assigns to it the value 2 squared + 1,
+which is 5. Or it takes the number -3, and assigns to it the value
+-3 squared + 1 = 10. We often graph functions in
+order to understand them better. So here you see the graph of
+the function x squared plus 1. So for example,
+when x is equal to 0 then the function maps 0 to 0 squared plus
+1 which equals to 1. And so when x = 0, the y value is
+equal to 1, which you see right here. Now imagine we want to study functions
+where we're not only plugging in real numbers into our functions but
+possibly complex numbers. The one you graph works for us for functions from the real
+numbers to the real numbers. We had all the x values on one axis, and
+the corresponding y values on the other axis, and
+then we were able to plot this graph. But if we're able to to plug
+in not only real numbers but whole complex numbers,
+the x-axis needs to become a plane, namely, the complex plane for
+the input values. And it's going to be a little
+harder to graph such a function. So a complex function is a function where
+we're allowing complex numbers to be plugged into the function and complex
+outputs to come out of the functions. So for example, f(z) = z squared + 1. Not only do we allow x
+values here as inputs, but we're allowing complex numbers as inputs. And the output is also a complex number,
+but how would we graph this? We would need four
+dimensions to graph this. We would need a whole complex plane for
+the allowable arguments of the function and a whole complex plane for
+the allowable outcomes. So let's study this a little bit further. What does this function actually do? Typically when we look at complex
+numbers we look at their real part x and their imaginary part y. So let's write z as x + iy and
+let's find out what f(z) equals. f(z), and we often call that w
+when we deal with complex numbers, is then equal to x + iy quantity squared. This is our z squared here. This is just z squared + 1. And now that we wrote it in terms of x and
+y, let's actually multiply out. x + iy quantity squared becomes x squared
+plus the second term iy quantity squared, where i squared is -1, that's where
+this negative sign comes from. So -y squared + 2 times (x + iy), I wrote that term back here 2xy*i,
+and then there's this +1. And I sorted the terms that we get by
+multiplying out by real numbers and complex parts. The real part of the result of multiplying
+out is x squared- y squared + 1. The imaginary part is 2xy. We can thus write this function f as
+a real part that depends on x and y. We call that u(x y). And an imaginary part that
+also depends on x and y. We call that v(x, y). So in this example here we would have u(x,y) = x squared- y squared + 1. And v(x,y) = 2xy. So both these functions are functions
+that take inputs x and y and spit out something real. And put together,
+they form this complex number, u + iv. So u and v are functions from, we say R2 to R because they have
+these two real inputs, x and y. So how would you graph such a function? The idea is to consider
+two complex planes. One for the domain and that's right here. So the domain is everything you're
+allowed to plug into your function. We call that the z-plane. And one for the range. So that's what the function spits out. We call that the w-plane. And the function f maps
+the z-plane to the w-plane. In order for this to be useful,
+we're going to want to analyze geometric configurations over in the z-plane and see
+what they get mapped to in the w-plane. So for example,
+if we had something like this maybe, we would want to analyze
+what does it get mapped to. Maybe it gets mapped to this
+over here in the w-plane. This will help us understand
+the function a little better. So let's do that for
+the function we were just looking at. So let's go back to f(z) = z squared. And again w, which is f(z),
+is then just x squared- y squared + 2ixy. Looking at it like this, it's still going
+to be difficult for graphing purposes. So sometimes it is more useful
+to use polar coordinates. In this example,
+if we write z as re to the i theta, instead of writing z as x +
+iy as we have done before, these are just two different notations for
+the same thing. But if we use polar notation,
+then w, which is z squared, so this number squared here becomes r
+squared times e to the i theta squared, which is e to the 2i theta,
+as we learned last week. And so this formula for w, the outcome, tells us the length of
+w is given right here. So that's where the length comes from and
+the argument of w, you can find up here,
+is 2 times the argument of z. And this really helps us in graphing
+the function or graphing geometric configurations and seeing what they
+get mapped to under this function. Again, as a reminder,
+w is f(z), which is z squared. We write z is re to the i theta. So we had seen that a norm of w is the length of z squared. And an argument of w can be found by taking 2 times an argument of z. So what this function does It squares the
+distance from the origin of the number and it doubles the argument. So, if you look at a z that moves in
+the z-plane around a circle of radius r, then the corresponding w's would move around a circle of
+radius r squared at twice the speed. For example, this point right here,
+the argument is 0, will just get mapped over here,
+but the argument is still 0, but the distance from the origin has
+changed from r to r squared. This point right here has
+an argument of pi over 2. Doubling the argument will map
+this point over here, again, at distance r squared from distance r. This point right here
+has an argument of pi. If you double that argument,
+it becomes 2pi, which is over here. So it's going to agree with this point,
+so pink and green are kind of on top of each other. So, both the pink point and the green
+point get mapped to this point over here. This point whose argument is 0 and
+distance from the origin is r squared. So let's take a point in between. How about this one right there? That point,
+let's say it has argument pi over 4. If you double that,
+the argument becomes pi over 2. And again, it's going to sit on
+the circle of radius r squared. Let's take a point down here. I'm going to run out of color, so
+I'm going to use a little cross to distinguish it from this
+blue point right here. The argument of this point
+down here is 3pi over 2. If I double that, the argument
+becomes 6pi over 2, which equals 3pi. 2pi would be going around once. 3 pi is over here. So, that blue point down here which I
+indicated with a cross, gets mapped to the same point that the orange point
+got mapped to, namely over here. Let's look at a little movie
+in which I show you how a point moves around a circle of radius r. Here's another way of visualizing
+what this function does. I graphed here a little sector and various radii that are indicated
+in different colors and also lines going out along radii. The image of this can be seen over here. So here is exactly what the function
+f would map this sector to. If this is r, radius r, then this
+is becoming r squared right here. So, in this case actually r = 2,
+and so r squared = 4. And we see that all arguments get doubled. So for example, this sector here gets opened up and
+becomes this size sector, and so forth. So this angle right there
+becomes a larger angle, namely this one which is
+twice the previous angle, or this angle right here becomes
+this angle right here. And so forth. So angles get doubled and
+the radius is squared from 2 to 4. So how do you understand
+more complicated functions? Let's say the function wasn't just
+z squared, but it's z squared + 1. Well, the idea is the same, except
+we can take this function apart into f(z) = z squared and a separate function
+that then just adds 1 to the result. So we first look at the w1 plane and
+just at the function w1 = z squared. So we already understand
+how that function works and I indicated that here by drawing a little
+sector and its image onto this function. And then we compose that
+with a second function, the function w = w1+1, so
+in the w-plane we just add 1. Adding 1 just shifts everything to
+the right because we're adding 1. We're not adding any imaginary parts,
+we're just adding a real number 1. So this just shift this
+picture to the right. And so this entire circle
+gets shifted to the right. It is no longer centered at 0,
+but is now centered at 1. And so all together, if you could just
+look at the function that goes all the way from here,
+from the z-plane to the w-plane, that will be the function f, which is
+the function f(z) = z squared + 1. We just took it apart into two steps and
+there I can understand it a little better. So how about the function f(z) = z squared
++ c, these are the types of functions we're interested in, where c is now any
+complex number and not just a number 1. Same idea, we'll take it apart. We'll first look at
+the function w1 = z squared, which we just understood in
+the previous picture already, and then the function w = w1 + c,
+so we're adding the c. Together, these two functions together, executed one after the other give
+the function w = z squared + c. And that's the function
+we're interested in. Now, if you're adding c to
+a complex number, that means you're shifting the circle that's
+centered at 0 to a circle centered at c. And that's what you can see right here. When we talk about Julia sets, the Mandelbrot set,
+we talk about the iteration of functions. So let's try to understand
+what that means. We're interested in a function
+of the type f(f(z)). So, we're plugging in
+f(z) into the function f, instead of just plugging
+in z into the function f. Let's start by looking at an example. Suppose f(z) is the function z+1. All that function does it is takes
+a point in the complex point, say this point right here and
+maps it to the right. So it pushes it out further to the right. So this was the original point here,
+and it maps it right there. So it just moves it
+over by 1 to the right. What happens if I then
+apply this function again? What would then take this point,
+if this was original point z, this is z +1, then it would map that point
+and move it to the right one more time. So it would go to z+2. And then if I applied f again,
+it would go to z+3. Let's actually plug in a number. Suppose z is equal to i, what's f(z)? f(z) is simply i +1 in that case. And what is, if I apply f one more time,
+what is f(f(z)) in that case? Well, that would be f(i+1), so I need to apply the function
+f to the number i+1, but f just adds 1 to whatever I stick in
+there, so it's i+1+1, which is i+2. And then if I apply f
+one more time to that, so I get f(f(f(z))). Already calculated f(f(z)), that was i+2. And the function f here just adds
+1 to whatever I stay in there, so it's going to be i+3. In general, f(f(z)), what is that? f(z) itself is z+1 and we're going to stick that
+back into the function f. To introduce function right here,
+we're now sticking z +1, wherever you see z,
+we're going to write z +1 instead. So we're going to stick z +1 right there. That gives us z + 1 quantity plus 1 or
+altogether, if we do the math, it's z + 2. Next, we're going to take
+this one step further, we're going to look at f of f of f of z. So, that's the same
+thing as f of f 2 of z, where f2(z) is just short for f of f of z. But f2(z), we just calculate it. We already know what that is,
+f2(z) is z + 2. So, all we need to do is,
+we need to look at f (z + 2). So, now, we need to to stick
+z + 2 into the function f, so wherever you see a z,
+we're going to write z + 2. We're going to stick that into that. So that gives a z + 2 + 1, which is z + 3. And you're starting to see a picture here. f (z) is z + 1. f 2(z) is z + 2. f 3(z) is z + 3. So you get the idea, if you keep
+doing this, if you do this n times, suddenly you get to fn(z) and
+that's z + n. f2 is also written as f composed with f. It's the composition of f with itself. Or f3 is f composed of f,
+composed of f, and so forth. So in other words,
+fn would be f composed with f, composed with f,
+dot dot dot composed with f. And I wrote fn times here. We read this as fn. Sometimes, people write f and
+they put a little circle up here before the n to indicate, we're
+talking about composition of functions, so executing function one after the other. This is not the nth power of f. The nth power of f is
+something entirely different. Let me demonstrate to you what the nth
+power of this f is, just as a comparison. The nth power of f, As a comparison is the following. It is f(z). You calculate f(z), and
+then raise the result to the nth power. So notice the difference in notation here,
+we have fn(z) and here we have f of z to the power n. Admittedly, this notation is confusing and it could be easily be
+confused with the nth power. But for now fn(z) means the nth iterate. So we just have to understand and be very
+clear of what we mean with our notation. If we were interested
+in the nth power of f, this would be f of z is z + 1, and
+then taking that to the nth power. And that is something like,
+if you use the binomial theorem, this is z to the n + n times z to the n-
+1, and so forth, a complicated formula. Not at all the same thing
+as nth iterate of f. So, we're talking about
+the nth iterate of f. Let's look at another example. Say f(z) =3z,
+what is the second iterate of f? f2(z) is f of f of f, so
+we're plugging f(z) into the function f, so wherever you see z,
+we're going to write f(z) instead. So it's f(3z), because f(z) is 3z, so we're plugging in 3z into this function f. So it's 3 times 3 times z, which is 3 squared times z. What does f3(z)? f3(z) is f of f2 of z, as we saw before. So now, we're going to plug f2(z) into f,
+but we already know what f2(z) equals. We calculated that's 3 squared times z. So now we're plugging 3 squared
+times z into the function f. Plugging in 3 squared times
+z into the function f, gives you, 3 times 3 squared z,
+which is 3 cubed z altogether. So we see, f(z) is 3z, f2(z) is 3 squared z, f3(z) is 3 cube z. And you get the idea that fn(z) is
+most likely 3 to the n times z. Two more examples. Let's look at f(z) = z to the d, f2(z) is then f of f of z. So that equals f of z to the d. Which means we need to plug in z to
+the d into the function, wherever see z, we're going to replace
+that with z to the d. So it's z to the d,
+that's just this part right here, and we need to raise that to the power d. But if you raise one
+power to another power, you can multiply the two
+exponents with each other. So this is z to the d squared. I'll put parentheses around
+that to make that very clear. And again, the nth derivative of z's been
+obtained by taking z to the d to the n. Last example. Let's look at f(z) = z squared + 2. So this is exactly a function of
+the form that we're interested in. We want to study functions of
+the form f(z) = z squared + c. So, z squared + 2, that's the function
+that we obtained when c = 2. So what is f2(z)? That is f of, f of z. So what is f(z), it's z squared + 2. So we need to plug in z squared
++ 2 into the function f. So, wherever you see a z, we're going to replace that with z
+squared + 2, so we get z squared + 2. That's the quantity that
+we're going to square. And then we add 2 to that, and
+that's what you see right here. When you multiply this through, z squared
++ 2 quantity squared is z to the 4th, plus 2 times 2 times z squared, so 4 times z squared, plus 4 and then this
+plus 2 here gives you this plus 6. f3(z) takes that number, squares it,
+and adds another 2 to it. So it takes the z to the fourth +
+4z squared + 6, squares it, and adds another 2 to it. When you multiply this through, you'll
+see that there's a z to the 8th term and then lots of other terms, but the highest
+power of z is going to be z to the eighth. And in general,
+fn is a polynomial of degree 2n. So it's going to start with fn(z) = z to the 2 to the n, and
+then lower power of z. It's going to be a polynomial but
+it's of a high degree. So this gets pretty
+complicated pretty quickly, looking at the input of
+a rather simple function. When we studied Julia sets
+of quadratic polynomials, we studied quadratic polynomials
+of the form z squared + c. And we'll see, why we don't have to
+study other quadratic polynomials. In general,
+if you look at quadratic functions, you could have 3z squared -15z+4. That's not exactly in this form,
+z squared +c, right? z squared +c doesn't allow for
+a linear term and it doesn't allow for
+any number here in front. But we'll see once we start studying
+Julia Sets why it is enough to just look at these types of
+polynomials and understand them. And therefore, we'll be able to
+understand more general ones as well. And we will study the behavior of
+the iterates of this function, so f, f2, f3, f4, fn. The Julia set of such a polynomial is
+going to be the set of all those points z that we can plug in for which the sequence
+of iterates behaves chaotically. We'll have to define exactly
+what we mean by that. But it'll become pretty clear
+by looking at some examples. We need thus a little
+bit more preparation. We need to study sequences
+of complex numbers. So for example, when z=0, we would study the sequence 0, f(0), f(f(0)), f(f(f(0))), and so forth. So what sequence is that? Let's actually do the math here. What is f(0)? If you plug in zero into this function,
+you just get c. 0 is 0, C, f(f(0)) so now we're plugging
+f(0) which is C into this function. F of C is C squared +C so
+we'll get a C squared +C. F of that whole thing now we're plugging C
+squared plus C back into the function f. So that's going to be (c
+squared + c) quantity squared, and then we're going to
+add another c to it. And it keeps going like that. So you could multiple through and you would get that this is
+a sequence of complex numbers. And the question we're going to ask is,
+what does that sequence do? It has to keep going. Does it run around wildly
+in the complex plane? Does it go in circles? Does it go off to infinity? Does it come to zero? Does it get closer and
+closer to just one point? What does the sequence do? So we need to study a little bit more
+what are sequences of complex numbers and that's what we'll study next.
