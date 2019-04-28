@@ -1,0 +1,253 @@
+Welcome back to Lecture 5 in
+our third week of the course, Analysis of a Complex Kind. Today, we'll learn about some
+properties of analytic functions. So far, we have defined what
+an analytic function is by looking it what it means
+to be complex differentiable. And then we look at some examples and we defined the exponential function,
+trigonometric functions. We look at polynomials and so forth. Today, we'll look at
+functions more generally and find some of their properties if
+we require that they're analytic. Here's the first theorem
+that we'll talk about today. Suppose, f is an analytic
+function on a domain. Remember what a domain is? That is an open and connected set. So it's all in one piece. And suppose that you have an f prime of z, the derivative of f,
+is equal to 0 everywhere in D. The theorem says that must
+imply that f is constant, which is not all that surprising because
+we kind of know the 1-dimensional analog. If f is a function that is defined on
+an interval, and it's differentiable, and it's derivative is 0 for
+all x and f is constant. And the image that we have in mind
+there is, well, what else could it be? Here's my interval from a to b. And I'm supposed to draw a function but
+the derivative is 0. Remember, the derivative to one dimension. The derivative meant the slope
+of the tangent line, so I'm supposed to draw a graph that is
+nice and in one piece and smooth and it has a tangent line with
+a 0 derivative everywhere. So the only way to do that is
+to draw something constant, this is supposed to be constant. So we use this one dimensional fact and
+use it to prove the complex fact. Here's the idea of the proof. First, we show that the function f, that's
+analytic in whose derivative is 0 in all of D, must be constant
+in any disk contained in D. So D is your domain, and
+who knows what it looks like, and then we have have a hole,
+this is not part of B. This first fact says, as soon as
+you pick a disc that fits inside D, in that disc at least we know that f
+must have the same value everywhere. And the second part of the proof is then,
+use that we already showed that f must be constant on any disc that we pick,
+and the fact that D is connected so it's in one piece, to show that
+f must be constant throughout D. And I'll quickly show you how
+long it would write these proofs. Here's the first part of the proof. Suppose we have a disk that fits into D. So here I just drew that disk
+without actually drawing D. D is some domain that goes somewhere
+around, we don't really know where it is. But here's this disk that fits into D and
+the center we denote it by a. And it's radius is r,
+it's really not important. Pick another point c in this disc,
+an arbitrary point. We're going to show that f at a and
+f at c, because c is an arbitrary point this will show that f must be constant, it
+has to value f(a) everywhere in this disc. Once you've picked a point c,
+pick a point b as in this picture, so that's on the same horizontal line as
+a, and on the same vertical line as c. The derivative of f is
+0 everywhere in D and if you write f as u plus iv then,
+ux, uy, vx and vy must be 0 in D. Because f prime is ux plus i, vx, and the Cauchey-Riemann equation also give us,
+that uy and vy must be 0. So in particular,
+let's look at the function u, the real part of f,
+on this line segment here. On that line segment, y doesn't change,
+the imaginary part doesn't change, only the x-coordinate changes. So on this line segment, the function
+u only depends on x and y is fixed. And we have that the x derivative is 0. We can therefore look at u as
+a one dimensional function here. We can fix y, the y value. It only depends on x and
+the x derivative is 0. We can therefore use our
+one dimensional fact and see that you must be constant
+on this particular line segment. What that means that u of
+a must be equal to u of b. Well then you can do the same kind of
+arguing on this vertical line segment. Here, the real part is fixed and
+only the imaginary part varies. So, u is now a function of y only
+on this vertical line segment, in fact the y derivative is 0. And again you can conclude from the one
+dimensional fact that u of c and u of b must agree with each other. But if u is the same at a, at b, and
+at c, it must be the same at a and c. So we have u(a)=u(c), but
+c was our arbitrary point in this disk, and therefore u is a constant
+function on this disk. And you can see that, similarly, you
+could have made the same argument for v, the imaginary part of f, and also gotten
+that v must be constant on this disk. So that shows the first part
+of the proof of a theorem. Here's the second part. Suppose a and b are now two
+arbitrary points in our domain D. They don't necessarily
+lie in the same disk. I can't draw a disk large enough around
+a that fits into D and contains b. That disk would have to contains parts
+that I'm not using, so I can't really we the first part directly to prove that
+the function must agree at a and b. However, D is connected and so it can find this nice curve here,
+connecting a and b within D. We could even make that from
+lines segments if I wanted to. By the previous step,
+f is constant in a disk around a. If I draw this, that's small enough so it fits into D at this constant in
+this green disk that I drew here. But now lets look at this
+neighboring orange disk. That's another disk and
+in any disk at this constant, so it's also constant on this disk. But, these two disks overlap. The green and orange disks,
+they overlap on this piece here. f is constant on the green disk. So, say f is equal to 1 plus i,
+on that green disc, and it's also constant on the orange disk,
+so let's say f is equal to 2 there. But on this blue portion
+where they overlap, those two constants
+are going to have to agree. So, the constant must be the same for
+the green disc and the orange disk. So f is now constant on the union
+of the green and the orange disks. But I can continue on like that. Look at the next disk that
+overlaps to the orange disk. f is going to be constant
+on that next disk. But it overlaps to the orange disk, so it
+has to be the same constant, and so forth. I continue on in this matter until
+I reach a disk that contains b. And all together, I can conclude that f of
+a and f of b must agree with each other. And therefore, f is constant in all of D Now this theorem, as simple as it is, together with the Cauchy-Riemann
+equations, has very strong consequences. Here are some examples. Suppose again, F is written as U + iv, and it's an analytic function in
+a domain open connected set. And suppose, furthermore,
+that the real part is constant. This then implies that f
+must be constant in D. You cannot find an analytic function
+whose real part is constant, and whose imaginary part varies. As soon as the real part is constant,
+everything is constant. How would you prove that? Well, u being constant in
+D implies that the x and the y derivatives are zero in D,
+because u is constant. Since f is analytic, it satisfies
+the Cauchy-Riemann equations and may imply that vx = vy. Since ux is zero, vy must be zero. Uy = -vx, but uy is here, so vx = zero. So vx and vy are also equal to zero. But now remember for analytic function f prime = ux + ivx. And we just showed that ux and
+vx are both equal to zero and that makes f prime equal to zero. But the previous theorem shows
+that f then must be constant. So the Cauchy-Riemann equations
+strongly correlate the real part and the imaginary part often analytic
+function with each other. They're not independent,
+you can not pick u to be constant and then have any choice in what to do with v. Once you pick u to be constant,
+v has no more choices left. Similarly if f is an analytic function
+in the domain and v is constant to the imaginary part is constant then
+f must be constant in D as well. Also, if f is analytic
+in a domain D again, and it's absolute value is constant. Remember the absolute value of f, actually
+the square of the f sub value, f(z), can be found by taking the real part
+squared plus the imaginary part squared. So if the absolute value of f is constant, then this too implies that
+f itself must be constant. So not even the absolute
+value can be constant. So let me show you why. Here again, the assumptions,
+f is an analytic function in a domain and its absolute value is constant. If the absolute value is constant, and the square of the absolute
+value also can't vary. So therefore there must exist some
+constant c such that u squared of z plus v squared of z is equal to c,
+no matter what z you plug in right here. That's what it means to be constant. Well there's two choices. The c here can be equal to zero,
+or it can not be equal to zero. If it is equal to zero,
+then this equation actually reads, u squared plus v squared is equal to zero. But u and v are real valued functions. The square of two real numbers
+is equal to zero if and only if these two real numbers
+are themselves Is equal to zero. So this would mean that f had to equal
+to zero and that is certainly constant. And so in this case we are done with
+the proof because we have shown that f is constant, constant that
+equal to zero in fact. If on the other hand this constancy
+is non-zero because u and v are real numbers and we're adding their squares,
+the result has to be something positive. So c is in fact positive. Now comes the trick. We're going to look at this equation
+right here, and we're going to take partial derivatives with respect to x,
+and with respect to y. How do you find the derivative with
+respect to x of u squared of z. U squared of z is the composition
+of two functions. It's the function u of z composed
+with the function that squares. The derivative of that by
+the chain rule is two times u of z and then times the derivative of u
+itself which is ux because we're taking the derivative with respect to x. So the derivative of u squared
+of z with respect to x is 2uux. Similarly, the derivative of v squared
+of z with respect to x is 2vvx. And on the right hand side,
+the derivative of a constant is zero. So this is the equation
+that results when we take a derivative with respect to
+x of this equation up here. Over here, you see what happens when you
+take a derivative with respect to Y. You get 2uuy + 2vvy = 0. Now let's use
+the Cauchy-Riemann equations. Remember that vx is equal to -uy and we're going to substitute this
+fact in this first equation. So instead of vx, while I write -uy. And in the second equation, we're going
+to use that ux is equal to vy and substitute vy with ux and
+we're also divide by two here. What we end up with is uux,
+minus vuy is equal to zero and uuy plus vux is equal to zero. Now let's multiply this
+equation on the left by u. Well then u times u is u squared times
+ux minus uvuy still equal to zero and on the right we multiply
+by the function v, uvuy plus v squared ux is equal to zero. By the way I've been omitting
+the parameter z or the parameter x and y because the equations would
+otherwise just look more complicated. Every single one of these
+equations is really u squared of x,y plus ux of x,y- u of x,y
+times v of x,y times uy of x,y. With it would make everything
+just look more complicated. So these are the two equations that
+we were left with on the last page. Now we're going to add
+these two equations. What happens when I add these
+two equations to each other? For the first equation, we have a minus
+uvuy and in the second equation, we have a plus uvuy. When we add the two left-hand
+sides to each other, these two will cancel each other out. And all that's left is
+the first term u squared ux and the second term of the second
+equation plus v squared ux. And the right hand side zero
+plus zero add up to zero. Here we can factor out the ux, so this reads u squared plus v
+squared ux is equal to zero. But what does u squared plus v squared? That was constant by our assumption. That's our constant c. So this last equation becomes
+c times ux is equal to zero. But c is a non-zero number. In fact, we showed it's a positive. The product of two numbers can only be
+zero if one of the two factors is zero which means ux must be zero throughout D. You can do similar calculation but
+using different substitutions, multiplying by different numbers, and
+find that uy is also equal to zero in D. And now,
+using the Cauchy-Riemann equations, once you have the ux and uy equals zero in
+D, you can find that vx(vy) are also zero. And therefore f prime is zero in D and
+we're back to being able to use our theorem which says
+that f must be constant in D. By the way, D being connected
+is really important here. because you could imagine a case
+where D consists of two open sets. And you can have a function being
+constantly equal to 1 on this set, and being constantly equal to 2 on this set. And the function overall
+wouldn't really be constant, it's only constant on these portions. And so that's why D being connected is
+important to imply that the function is constant throughout. Let's finish with
+a really strange example. The strange example is the function f
+that's defined in the whole complex plane. By e to the -1 over z to the fourth, for
+non-zero z values and 0 at the origin. Clearly, 1 over z to the fourth
+is an analytic function, analytic wherever z is non-zero. So it's analytic in the complex
+plane minus the origin. The minus sign still makes
+an analytic function. The exponential function is analytic. So the composition of
+these two is analytic. So in C minus the origin clearly
+this function f is in the way. In fact, one can find u, v, their x and
+y derivatives, and all that and show that they actually satisfy
+the Cauchy-Piermann equations everywhere. They clearly satisfy them in C-
+0 because we just stop at f is entered living in c- (0) but they actually
+satisfy them at the origin as well. And one can in fact show
+that the origin ux, uy, vx and vy are all equal to 0. However it turns out f is not
+differentiable at the origin. How is that possible? X satisfies the Cauchy-Riemann equations
+everywhere in C and is not differentiable? Isn't that a contradiction to
+some theorem that we had earlier? In fact,
+f isn't even continuous at the origin! So a function that's not continuous
+can't be differentiable. Remember if a function if
+differentiable then it's automatically continuous at that point. Since f is not continuous at the origin, I'll show you why f cannot be
+differentiable at the origin. So we'll have to solve
+this mystery in a little. So, how is this possible? For now I'm just going to show you why
+f is not continuous at the origin. So here is the function again,
+why is it not continuous? What does continuity mean again? Continuity means that the limit of f(z), in this case as z approaches 0,
+should be equal to f(0). That's what continuity would mean. The limit has to exist, and as z goes
+to 0 that limit has to equal f(0). So we need to look at what happens as
+z approaches 0, what happens to f(z), does the limit exist? And as always, we're going to look at z
+approaching the origin along substandard ways, so along the x-axis,
+along the y axis and so forth. Let's start z approaching
+the origin along the real axis. So z is of the form x+i times 0,
+so no imaginary part. And letting that go to 0
+means x is going to go to 0. And f(z) is simply f(x) and
+that's e to the -1 over x to the 4th. As X goes to 0,
+this denominator here goes to 0. 1 over that goes infinity but
+there's a negative sign in front of it and so, the exponent here goes
+to negative infinity and e raised to a number that's going forth
+negative infinity actually goes to 0. Let's remember the exponential function. Looks like this. And if you plug in numbers
+that are closer and closer to negative infinity, the
+exponential function gets very close to 0. So as x approaches the origin along
+the real axis, f of x goes to 0. All right, so maybe something will
+happen along the imaginary axis. So let's next consider z approaching
+the origin along the imaginary axis. That means z is of the form iy. No real part, just iy. And that's going to go to 0. So, y goes to 0. What's f(z)? Well it's f(iy) which is e to the -1
+over i to the 4th, y to the 4th. But i to 4th is just 1. So it's either the minus
+1 over y to the 4th and the exact same reasoning that we've used
+before shows that again f goes to 0. So, f goes to 0 as you approach 0 both
+along the real and the imaginary axis. So, so far so good, right? Where's the problem? So far,
+it looks like f is indeed continuous. However, consider z of the form
+r e to the i pi over 4. So z is going to 0 along
+a 45 degree angle. What is z to the fourth in that case? Well it is r to the fourth
+times e to the i pi over 4 times 4 which is e to the i pi and
+what is e to the i pi? E to the i pi is -1. So z to the 4th is -r to the 4 and that minus sign is what's going to
+be the cause of all trouble. What's f(z)? It's either -1 over -1 to the fourth. And these two minus signs
+will cancel each other out. So f(z) is now e to the 1
+over r to the fourth. But as r goes to 0, 1 over r to
+the fourth goes to infinity and there's no negative sign
+there to rescue it. The exponential function,
+as you plug in numbers that are bigger and bigger towards plus infinity,
+goes towards plus infinity. And that is certainly not equal to f(0). So the limit doesn't even exist. And it certainly doesn't equal f(0), which shows that the function
+is not continuous at 0. So with f not being continuous at
+0 it's also not differential at 0. So let's go back to the original problem,
+what happened? U and v satisfy the Cauchy-Riemann
+equations everywhere in c yet f is not differentiable at the origin. How is that possible? Well this is what the theorem really said. Let f be defined on the domain D. Then, f is analytic in D if and only if u and v have continuous first partial derivatives on D,
+that satisfy the Cauchy-Riemann equations. So it's not quite enough just to
+satisfy the Cauchy-Riemann equations. The partial derivatives
+have to be continuous. In our strange example, these partial
+derivatives are not continuous at 0. And so the assumptions of the theorem
+are simply not satisfied, even though they seem to satisfy
+the Cauchy-Riemann equations. That's not enough. They need to be continuous, in addition. So, that's what went
+wrong in this example. It's a very subtle example and, most of the time,
+this won't affect you in the least. Next week, we'll study conformal mappings. Those are analytic functions that
+are injective or one to one in addition. And know how some very special
+properties that we'll learn about. We'll talk about examples of
+conformal mappings namely the Mobius transformations that
+are fascinating in and of themselves. And as a bonus I'll show you the Riemann
+mapping theorem, which sets the following. Suppose I'm giving you some kind of
+domain, again open connected set. But this time I'm not allowing
+that domain to have a hole. So any domain that's not having a hole. So something like this is not allowed. So the only kind of domains that I'm
+going to allow are the ones that have no holes. Suppose I'm giving you such a domain then I can find an analytic function
+that is 1 to 1 and on to. From this domain, no matter how ugly
+you drew that onto the unit disc, and it's going to be
+a conformndal mapping system, it's going to be analytic,
+one to one injective. I'll explain what that means next week. And on two. So in other words the Riemann
+mapping theorem makes it possible to transfer things back and forth
+between this domain and the unit disk. This is one of the most amazing
+theorems in complex analysis. And we'll learn about it next week.

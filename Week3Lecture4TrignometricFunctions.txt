@@ -1,0 +1,190 @@
+Welcome to lecture 4 in our third week of
+the course, Analysis of a Complex Kind. Today we'll learn about the complex
+trigonometric functions, so the extensions to the complex plane
+of the sine and cosine functions. We have already extended the exponential
+function to the complex plane, so the question is can we do the same
+thing for trigonometric functions? Now remember, e to the i theta
+was our shorthand notation for cosine theta plus i sine theta. Therefore either -i theta or
+you just replaced theta with minus theta, it's cosine of minus theta plus i
+times the sine of minus theta, but cosine is a need function. These are just our regular viewed
+value of cosine and sine functions. So that's cosine of theta but
+sine as an odd function, so sine of -theta is -sine of theta. Now look at these two identities,
+e to the i theta is cosine theta + i sine theta, e to the- i theta
+is cosine theta- i sine theta. If I add these two things up, What I find is that e to the i theta + e to the-
+i theta is simply two cosine thetas. The i sine theta part cancels out
+because it has a plus sign here and a minus sign there. On the other hand, if I subtract
+these two equations from each other, I find that e to i theta- e to
+the -i theta is 2i sine theta, because now the cosines cancel out and
+the sines don't. But these two equations that I just
+obtained, I can solve them for cosine theta and
+sine theta by simply dividing by 2 or 2i. And what I get is that cosine theta is e
+to the i theta + e to the- i theta over 2 and sine theta is e to the i
+theta- e to the -i theta over 2i. And this is for
+the real value of cosine and sine. The idea is now,
+well now that I can talk about e to the i anything, it doesn't have to
+be just a theta, I could put a z there. Maybe I could just extend this definition
+to the entire complex plane and that's exactly what we're going to do. The complex cosine and
+sine functions are defined via cos z = e to the iz
++ e to the -iz over 2. And sine z is e to the iz
+-e to the -iz over 2i. What is e to the iz, by the way? e to the iz, suppose z is x + iy, so that's e to the i(x+iy) that equals e to the ix + i squared y which is -y. So that will be e to the -y
+which is our regular real-valued exponential
+function times e to the ix. You could rewrite this as e to the -y cos x + i sin x. And now we have expressed e in the iz in
+terms of purely real value functions. You could do the same thing for
+e to the -iz. And so therefore cos z can be
+expressed in terms of all real values, cosine, sine and exponential functions. And we'll do that later. Let's next learn about some properties of
+the complex cosine and sine functions. In particular, we want to compare those
+properties that we already know from real-valued analysis to those that we
+can find for the complex equivalents. First of all sin z and
+cos z are analytic functions because the exponential function's
+an analytic function. The function z goes to iz is analytic,
+and so you see a composition of those
+two functions right here. We're adding another analytic function and
+then dividing by 2, so by the rules of analytic functions, the
+cosine function is an analytic function, and similarly,
+the sine function is an analytic function. Since they're analytic in the entire
+plane, they're, in fact, entire functions. For real-valued z, so if you plug
+in a z of the form x with no iy, so just, z = x,
+the complex sine function and cosine functions agree with
+the real-valued sine and cosine functions. Because in that case I get cosine of z
+= cosine of simply my x + i times 0. And that's e to the i x + e to the -ix /2, and that's the definition of our
+real-valued cosine function. What's cosine of -z? For the real valued function,
+the cosine function is an even function, cos of x is equal to the cos -x. Is that still true for
+the complex cosine function? Well cos(-z) = e to the -iz + e to the iz. And I can just interchange these
+two terms on top here because addition is communicative and
+I see that this is equal to the cos z. Sin(-z) = e to the -iv, I'm just plugging in a -z for z up here. So e to the -iz,
+minus e to the iz over 2i. I can't just interchange these two
+terms because of this negative sign. So if I do interchange these two terms,
+I get an additional negative sine. So sin(-z) is -sin z, just the same
+thing is true in real valued analysis. s(-x) is equal to -sin(x). Sine function is an odd function,
+it remains so in the complex extension. Furthermore, the addition properties for
+the sine and cosine function still hold. cos(z+w) = cos z cos w- sin z sin w, and sin(z+w) = sin z cos w + cos z sin w, how would you prove such a thing? I'll show you an example. How would you prove that cos (z
++ w) = cos z cos w- sin z sin w? You would simply plug in the definitions
+and simplify, let's do that. Let's start with the right-hand side,
+in fact. cos z cos w- sin z sin w. Here I wrote down the expression for
+cos z, e to iz + e to the- iz over 2. The same thing for cos w- sin z e
+to the i z- e to the- i z over 2 i. And here I have sin w. I noticed when I multiply these
+first two fractions with each other, the denominators multiply to 4. With the second two fractions,
+the denominators are 2i times 2 i, which is -4 in the product. Together with this negative sign in front,
+I can cancel the negative sign from the denominator and
+make this negative sign into a plus. So the common denominator for
+these Products of fractions is 4, and the numerators are e to
+the i z plus e to the minus i z. That's from this term right there. Then e to the i w plus e to the minus i w. And now I have a plus, remember,
+from the i squared and this negative sign. Then I have this term. And finally, this term. Now when I multiply through,
+I get a lot of terms. We're not going to talk through
+all of these terms, just trust me, these are all the terms you
+get when you multiply through. For example,
+e to the i z times e to the i w. E to the i z times e to the minus i w. And so forth. But if I look at these terms carefully,
+I have e to the iz, e to the iw right here, and
+there's another one right there. Together, that gives me 2 e to the i z,
+e to the i w. I also have an e to the minus i z,
+e to the minus i w here, and another one right there. Together that gives me two of these terms. The rest we get lucky. The rest actually cancels out. e to the i z times e to the- i w, and
+here I have- e to the i z e to the- i w. So these two terms cancel out.. Similarly, e to the minus
+i z e to the i w and minus e to the minus i z e to the i w,
+so these two terms cancel out. So, everything simplifies. Now I have a 2 in the numerator,
+a 4 in the denominator. I can cancel out one of those 2's. And make the denominator a 2 instead and end up by combining the exponents with e
+to the i (z +w) + e to the -1 (z +w) / 2. But that's cosine ( z + w ). That's what I wanted to show. So, there's no ingenuity
+in here in this proof. It's literally, flooding in
+the definitions and simplifying. Lets look at some further properties. Remember the real valued consign
+function is periodic with .2 pi. Is that still true for
+the complex cosine function? Let's find out. What is cosine of (z + 2 pi)? I use the definition and
+replace z with z + 2 pi. But what is e to the i times (z + 2 pi)? That is e to the i z times e to the i. Times 2 pi. But what is e to the 2 pi i,
+that's equal to 1. So that's equal to e to the i z. In other words,
+this first term is simply e to the i z. And similarly, the second term
+is simply e to the minus i z. And so, I realize the cosine function
+is also periodic with period 2 pi. And similarly the sine
+function has the same period. Remember in real analysis, sine
+squared x plus cos squared x equals 1? Well that is still through for
+the new complex sine and cosine functions. sine squared z plus cosine
+squared z equals 1. How would you prove that? It is actually a very simple proof. You substitute w = -z in
+the addition formula for the cosine function,
+let me simply demonstrate how to do that. The addition formula for
+the cosine function was cosine of (z+w), what we're going to make that (z+-z),
+and that's my w, is equal to the addition
+formula set cosine z. Cosine W which is minus Z for me, minus sine Z, sine W, which is minus Z. Let's simplify both sides of the equation. Z plus minus Z, that's simply zero. So this side of the equation
+becomes cosine of 0. But cosine of 0 is 1. On the right hand side, cosine of
+minus z is the same as cosine of z. We showed that the cosine
+function is an even function. So this is cosine z times cosine z,
+which is cosine squared of z. On the other hand,
+sine of minus z is, minus sine of z. So this minus sine can be pulled out and joins this minus sine in
+order to give me a plus. All together sine square root of 2. So that's how simple it
+is to prove that formula. Furthermore, sine (z + pi/2)
+give us back the cos function just as it was the case with
+the real valued functions. Again, it's very simple to prove. You look at sine (z + pi/2) and plug z + pi/2 into that
+definition of the sine function. So wherever you see a z. Make it a z plus pi over 2, so sine of z
+plus pi over 2, that equals e to the i, z plus pi over 2, minus e to the minus i,
+z plus pi over 2, divided by 2i. What is e to the i, z plus pi over 2? Again, we can pull that apart,
+as we did earlier. That is e to the i z times
+e to the i pi over 2. What is e to the i pi over 2? e to the i pi over 2 equals i. So in other words,
+this is i times e to the i z Similarly, the second term is minus i
+times the minus i z because I have the, either the minus i prior
+2 which is minus i. This simplifies because I have
+an i in the denominator as well. See this i right here? This I in the denominator cancels
+out with this I and that I. These two negative signs make a plus. I'm left with either the i z plus, either
+the minus it over two which is cosine. What are the 0's of the sign function? We know the 0's of the real
+valued sine function. The real valued sine function
+looks something like this. You know it goes through the origin, And is equal to 0 at pi, 2 pi, 3 pi,
+and so forth, negative pi. And so forth. Are there additional 0's, now that we have extended this
+function to the complex plane? Let's find out. Remember, sine z is e to the i z
+minus e to the minus i z, over 2i. If we want that to equal to 0, then we need the numerator of
+this fraction to be equal to 0.. So, if e to the i z needs to
+equal e to the minus i z. Remember we proved that e to the z is
+equal to e to the w, if and only if z minus w is a multiple of pi i times 2. We proved this in our lecture
+about the exponential function. So, e to the i z is equal to
+e to the minus i z, if and only if their difference, in other words,
+i z minus (-iz) is of the form 2 k pi i, for some k in the integers. But i z- (-i z), that's 2 i z. So 2i z needs to be equal to 2k pi i. I can cancel out a 2. I can cancel out an i and
+this reads z needs to be of the form k pi. For k is an integer. Those are exactly the zeros
+that we already knew of. So the sine function does
+not gain any extra zeros by extending it to the complex plain. It's never going to be zero elsewhere,
+only zero on the real axis. Similarly, we can show that the cosine
+function is 0 only with the real valued cosine function was 0 namely at the points
+pi over 2 + k pi where K is an integer. Now, we showed that the sine and cosine
+functions are analytic functions, so they must have derivatives. What are these derivatives? The derivative of the sine function is
+simply the derivative of e to the i z- e to the- i z over 2 i. 2 i is a constant that we multiply with,
+it can go to the side. In other words, we only need to take
+the derivative of the numerator. The numerator consists of two functions, each of which we can
+differentiate separately. In other words we need
+the derivative of either i z, and the derivative of e to the- i z. Let's look at the derivative
+of e to the i z. We found the derivative in general
+of a function e to the i x z. And found that was e times
+the derivative of e to the i z. So in this case,
+this is going to be i x e to the i z. That's right here. The derivative of either
+the- i z is found similarly, we multiply with this constant
+( -i ) e to the- i z. When we simplify we see there is
+an i here, an i here, an i here, they all cancel out. Minus, minus gives me a plus. So I'm left with e to the i z + e to
+the- i z over 2 which is cosine z. Just like it was the case for
+the real value at sine and cosine functions,
+the derivative of sine is cosine and similarly, the derivative
+of cosine is negative sine. Finally, it is possible to express the
+complex sine and cosine functions solely in terms of the real sine and the cosine,
+and the real hyperbolic sine and cosine. Let me quickly show that to you. Sine z is sine of x plus i y. We could view this x + i y as
+the sum of two complex numbers. One of those complex numbers is x,
+the other one is i y. In other words, we are allowed to
+use the addition formula here. So this becomes sine x cosine
+i y + cosine x sine i y. What is cosine of i y? We need to plug in i y in
+the cosine formula, and get e to the i x i y + e
+to the- i times i y over 2. And then back here we do the same
+thing with the sine function. E to the i times i y- you
+have the- i x i y over 2 i. Let's see what we can simplify. I x i x y, that gives me a- y and
+here i x i x y x -1 is just e to the y and
+back here the same thing happens. If I rewrite this I find that
+this first fraction is e to the y + e to the- y over 2. And the second fraction,
+I have an i in the denominator. If I bring the i into the numerator,
+1 over i is equal to- i. So I can bring that into the numerator
+at the expense of a negative sign but I'm going to use that negative sign to
+flip these two terms with each other. So I can now write e to the y- e to the-
+y over 2 and then i here in the front. But now I'm left with sine of x,
+this is the hyperbolic cosine function. Cosh y + i cosine of x x sinh of y. Or you could also leave it the way it
+was in the previous line if you don't like to use cosh and sinh, and
+having another way of actually evaluating sine of z, in terms of purely viewed
+valued function, You need the sine of x, and the exponential function
+in the cosine of x, and the exponential function of y and- y. Similarly, you can find that
+cosine of z is cosine of x, cosh y,- i sine of x, sinh y. Next up are some amazing
+properties of analytic functions. Here's an example. If f is an analytic function in
+the domain, and you write it as real part + i x imaginary part, where u is the real
+part, v is the imaginary part, and suppose the real part u is constant throughout the
+domain, then f itself must be constant. There's no way to have
+an analytic function where only the imaginary part varies. If the real part remains
+constant the imaginary part has to remain constant as well. U and the imaginary part are not
+independent of each other. They're tied together closely. And that's what gives analytic functions
+some of their amazing properties This is what we're going to study
+in the next lecture.

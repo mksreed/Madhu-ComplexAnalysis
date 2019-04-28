@@ -1,0 +1,356 @@
+Welcome to our third week in our course,
+Analysis of a Complex Kind. Today, we'll learn about
+the complex derivative. Before we go there, let's quickly
+review the derivative from calculus. Given a real value function
+f of a real variable so there's nothing complex in here. And a point x0 in the integral in which
+f is defined we say the function is differentiable at x0 if the limit
+of the difference quotient exists. And the difference quotient is f
+(x)- f (x ) divided by x- x 0. If that limit as x goes to x 0 exists, we
+call the limit the derivative of f at x 0. And denote it by f prime of x 0. Let's quickly review what
+this means geometrically. Here's a graph of the function in this
+blue graph here is the graph of f in this example. Now we pick a point x0
+where f is defined and we look at f ( x0),
+that's this point right here. So this point that I'm circling
+has coordinates x0 and f (x0). And then we take a second point x. And we look at f ( x) and so this point
+that I'm now circling is the point whose coordinates are x and f ( x). Next we look at the numerator of our
+difference quotient f (x)- f ( x0). F(x) is this value right here. F(x0) is this value. The difference between the two
+of them is this length. So this is f(x)- f(x0). And we divide that by x- x0. X- x0 you can see in this length
+right here, so this thing right here. F(x)- f(x0) divided by x- x0 is rise over run for
+this red secant line that I drew. In other words it gives us
+the slope of the red secant line. It's the change in y
+divided by the change in x. So this difference quotient
+f(x)- f(x0) divided by x- x0. It's the slope of the secant
+line through the points (x0, f(x0)) and (x,f(x)). Next we need to let x approach x0. And by doing that,
+the slope of the secant line will change. As this point,
+x moves toward x0, the slope of the red line that's the secant line
+will change, here's an example. X moved closer to x0 and
+the line changed quite a bit. As x moved closer and
+closer and closer to x0, the secant line becomes
+a tangent line in the limit. In the limit x and
+x0 have kind of overlapped. And the slope of the secant line
+becomes the slope of the tangent line. In other words, if this limit exists, it is the slope of the tangent
+line to the graph of f at x0. The derivative is thus the slope of
+the tangent line to the graph at x0. The slope can be negative,
+it can be zero, it can be positive. Here you see an example where the slope
+and that's the derivative is negative, the tangent line has a negative slope,
+it's sloping downward. In the middle example you see an example
+where the tangent line is horizontal. It has a zero slope and therefore the
+derivative is zero at this point x0 where the minus is tangent to the craft. In this example here, the slope of
+the tangent line is positive and therefore the derivative is positive. And it becomes more positive as
+you move along this graph because the line would get steeper and steeper. The derivative does not have
+to always do this however. Here's an example where the graph
+has some kind of corner. So if this is my point x0 f(x0) and that word to approach this point
+x0 with x values from the left. And these secant lines all look
+a little bit like this and definitely have a positive slope
+even the limit of slope is positive. However, if I approach
+this point from the right. My secant lines have a negative slope and
+approach a limit that's negative in slope. And I can not find a one tangent line
+to the graph of f at this point x0. There is no tangent line and so there's no unique slope which means this
+function does not have a derivative at x0. So in this example f prime
+of x0 does not exist. Let's return to complex numbers now. The derivative is defined in a completely
+analogous way to the real value case. We say a complex valued function f of
+complex value is complex differentiable. And typically we don't really
+say complex differentiable. We say differentiable if it is
+clear from the context that we mean complex differentiable. So a function is differentiable at a point
+z0 which must be on the domain of f, obviously. If the limit of the difference
+quotient exists we look at f(z)- f(z0) divided by z- z0 and
+let z approach z0. Now notice, though if you pick
+a point z0 in the complex plane. There are lots of ways of
+approaching that point. It's not just along the real axis like we
+have to look at in the real value case. You could also come in the complex
+direction from the imaginary axis. You could come at a 45 degree angle. Or you could even approach in spirals. There's lots of different
+ways of having z approach z0. And so for this limit to exist
+it's a little harder to check than in the real case. If this limit exists it's
+denoted f prime of z0. Sometimes we also use the notation
+df dz as a derivative of f with respect to z at z0,
+or just d dz of f(z) at z = z0 Let's look at some examples. Suppose f (z) is a constant function,
+so no matter what z you plug in, you get the same constant value out of it. If you prefer, you can just think about
+a specific constant like ten right here. Take a z0 in c and
+look at this difference quotient, what is f(z)- f(z0) divided by z- z0? F(z) is this constant c, but f(z0) is also
+equal c because f is a constant function. Divided by z- z 0. The numerator evaluates to 0,
+the denominator's non zero. So the quotient's equal to 0. And as z approaches z0 it doesn't
+matter how z approaches z0, this quotient is always zero and
+clearly has the limit zero. Therefore the derivative of f is equal to
+zero for all points In the complex plan. Sometimes instead of writing
+the difference quotient as f(z)- f(z0) divided by z- z0. We write z as z0 + h. Where h is a complex number. And the difference quotient, then would
+become instead of writing z here, we're going to write z0 + h,
+so f(z0 + h)- f(z0). And z- z0 then becomes,
+if we write z as z0 + h, and subtract from that z0,
+what's left over is h. So this is the exact same quotient,
+just written in a different way. In terms of the difference h,
+rather than in terms of c. So the difference quotient is f(z0
++ h)- f(z0) divided by h, or often we just write f(z + h)- f(z) over h when
+we get tired of writing z0 all the time. And we'll take the limit as h approaches
+0, because when z and z0 get closer and closer to each other, it means that the
+difference z- z0, which is h, goes to 0. So here's another example,
+let's look at the function f(z) = z. So the function that assigns to
+each point just the same point. So what is f(z0 + h)- f(z0) divided by h? Well f(z0 + h) is just z 0 + h,
+which you see right here. F(z0) is simply z0. F just returns exactly the argument
+that you passed into it. We divide by h, and
+you see in the numerator the z 0's cancel out with each other,
+and you're left with h over h. H over h is 1. No matter what the value of h is. And as h approaches zero, it remains one. No matter how H approaches zero. Which means this limit exists. And that means the derivative
+of f is equal to one for all of Z in the complex claim. So this is differential
+everywhere with derivative one. >> Let's next look at the function
+f of z equals z squared. The difference quotient then
+becomes f(z0) plus h, and the function f just takes its input,
+in this case, z0 plus h, and squares it. So that becomes (z0 + h) quantity squared-
+f(z0), which is z0 squared, divided by h. This term, (z0 + h) quantity
+squared multiplies through to z0 squared + 2 times
+z0 times h + h squared. And then we subtract z 0
+squared from this expression. So we have a z 0 squared here and
+we subtract one here. Which means the numerator
+simplifies to 2 z 0 h + h squared. Next we can cancel an h out of the
+numerator, an h out of the denominator. So, we are left with 2z0 plus h. And as h goes to zero, this plus h term
+becomes less and less important so that in the limit we
+are left with two times zo. So the limit exists and therefore f prime of z is two z for
+all z in the complex plain. Let's look at another
+example f(z) = z to the n. So, the function takes an argument and
+raises it to the nth power. Therefore, the difference quotient
+becomes f of z0 plus h which z 0 plus h to the nth power minus f(z0),
+which is just z0 to the n divided by h. Now how do you multiply add
+z0 + h to the nth power? We can do that using the binomial theorem. But, we're actually only
+entered in the first few terms. The binomial theorem says
+that this is equal to the sum of n choose k times z 0 to the k times h to the n minus k. And this runs from k to zero to n. You don't really need to
+know this binomial theory. All you need to know is that when you
+multiply through, you have different powers of z zeroes, and different
+powers of h which always add up to n. And the binomial coefficients tell
+you how many of those terms you have. So for example you'll have a z0
+to the nth power and no h term. Then you have a Z0 to the n
+minus 1st power and an h term. Then a Z0 to the n minus second power and
+then h squared terms, that would be is Z0 to the n
+minus third in h cube and so forth, all the way to Z0 to
+the no power times h to n. And the number of times these terms occur
+are given by the binomial coefficients. Z0 to the n occurs once, h times z0 to the
+n- 1 occurs n times, which is n choose 1. This coefficient here is n choose 2,
+and so forth. None of these really matter for the limit. In the limit the only terms that
+are really important are these first two terms. And you notice we have, again, a Z0 to
+the n term that we're going to subtract, so that term goes away. We're left with terms that all have
+an h or higher power of h in them. The only one that has a power one
+of h is this first term n times h times z0 to the n minus one. So if we cancel out an h
+of the numerator and denominator, this term
+has no h's left in it. It becomes n times z0 to the n minus one. All the other terms just
+lose one power of their h. But all have an h left in them. You could factor out an h. And have all these remaining
+terms left in here. So as h approaches 0, we have some number
+here that gets multiplied by h, which becomes smaller and smaller and smaller,
+and in the end becomes negligible. In other words the limit of this
+expression is n times z0 to the n- 1. Therefore the function z to the n
+is differentiable in the complex sense with derivative n times z to
+the n minus one for all z and c. Now that we have taken a few derivatives
+it would be great to understand how we can combine functions whose
+derivatives we already know. So let f and g be differentiable
+functions and differentiable at z, and suppose h is another function
+that's differentiable at f(z). We want to look at the composition
+that's why we want to have h differentiable at f(z). And suppose c is a complex constant. And the derivative of a constant times f Is the same thing if the constant
+times the derivative of f. So constants can go out to
+the side when taking derivatives. Next, the derivative of a sum of two
+functions is the sum of the derivatives. In other words you can individually
+differentiate these two functions, and then just add the results together. The product is a little bit more
+complicated, it's not sufficient to just simply differentiate each function,
+but there's a product rule. You differentiate f and
+multiply it with g. Next, you don't differentiate f and
+multiply that by the derivative of g. There's also a rule for
+the derivative of the quotient f over g. Obviously you can't do that if g(z) is 0. So you want to require
+here that g(z) is not 0. But if it is not 0 the quotient rule
+is the same as it is in calculus. You find the derivative of the quotient
+by squaring the denominator, writing down the denominator again
+times the derivative of the numerator, minus this time the numerator times
+the derivative of the denominator. So you almost see the product rule in
+the numerator except for that minus sign. And so you need to remember which
+term comes first, which term is the one with the minus sign and which
+term is the one without the minus sign. The way I remember that is I
+square the denominator and write it down right away again and then
+times the derivative of the numerator, therefore I know which one is
+the term that comes first. Finally, the derivative of
+the composition h of f of z can be found by taking
+the derivative h prime at f(z), and multiplying that by f prime of z. Rather than showing you all these proofs
+which are the same as the proofs in calculus, I'm going to show
+you a number of examples. These are important rules to practice. If you are not so familiar with
+these rules from calculus anymore, I highly recommend Let
+you do some practice. You could, for example, practice with all
+the problems I'm about to present but by trying to find the derivatives by yourself
+first before looking at my solutions Let's start with a function f(z)
+= 5z cubed + 2z squared- z + 7. So we have a sum of a bunch of functions. Difference is the same as the sum, you can therefore differentiate
+these four functions individually. So what are all these derivatives? The derivative of 5 times z cubed
+is a constant times z cubed. Constants can go to the side, 5,
+times the derivative of z cubed. We just found the derivative
+of z to the n. That was n times z to the n- 1. In other words, the derivative
+of z cubed is 3 times z squared. So, the derivative of 5 z
+cubed is 5 times 3 z squared. Similarly we find
+the derivative of 2z square, the 2 goes to the side times
+the derivative of z squared which is 2z. The derivative of z which is either
+the one that we found earlier, which was 1, or it would also apply this
+as the derivative of z to the first power which is 1 times z to the zeroth power,
+which is also 1. And 7 is simply a constant
+whose derivative is 0. Therefore, I didn't write
+down the plus 0 part. Now if you wanted to simplify this a bit,
+this is 15z squared + 4z- 1. Next, let's look at 1 over z. We can use the quotient rule for that one. Even though there's also easier ways
+of finding this derivative, but that's just fine by
+using the quotient rule. So we square the denominators, z squared,
+we write down the denominator again, that's z, times the derivative
+of the numerator, which is 0. The numerators are constant. Its derivative is 0. Minus the numerator, 1,
+times the derivative of the denominator. The derivative of z is 1. The numerator there for simplifies to
+1 with a negative sign in front of it. The denominator is z squared. So the derivative of 1 over
+z is -1 over z squared. A different way of finding this derivative
+would have been to look at this function as the function f of z
+= z to the power -1. And realizing that this rule for the derivative of z to the n also
+holds for negative exponents. And so the derivative is
+therefore -1 times z to the n -1. So -1 -1, which is -z to the -2, and if you rewrite that,
+that is -1 divided by z squared. Let's look at f(z) = (z
+squared- 1) to the nth power. So here we have an inside function and an another function on
+the outside to the power n. We can use the Chine rule. The rule that said that
+the derivative of h(f(z)). Is h prime of f of z times f prime of z. So we need to find the derivative
+of the outside function, which is the function that raises
+its argument to the nth power. Well, the derivative of that is n
+times the argument to the n-1 power. And then multiply that by
+the derivative of the inside. So z squared- 1,
+well the derivative of z squared -1 is 2z. Therefore the derivative
+in this case is n times z squared minus 1 to the n
+minus 1st power times 2z. Let's look at another equation. f(z) = (z squared- 1) (3z + 4),
+which is the product of two functions. Of course we could multiply through and
+then differentiate term by term. But I want to show you a use
+of the product rule here. The product rule said that we need to
+take the derivative of the first function which in this case is 2Z,
+the derivative of z squared- 1. And multiplying with the second function,
+3z + 4 plus the first function, z squared- 1 times the derivative of
+the second function, but the derivative of 3z + 4 is simply 3 because 4 is
+a constant and its derivative is 0. Finally, let's look at z divided
+by z squared + 1, we can. Let's use the quotient rule which means
+we have to square the denominator z squared + 1, 1 is z squared. Write down the denominator again and multiply with a derivative
+of the numerator. But the numerator is z,
+its derivative is 1. So I didn't even write down
+the times one right here. Subtract from that the numerator z times
+the derivative of the denominator which is 2z. And if we wanted to simplify that,
+we have a (z squared + 1)- 2 z squared, so the numerator becomes 1- z squared, and the denominator is
+the same as it was before. I reordered as (1 + z squared) quantity
+squared just to make it look nice. Here's another example of function
+that is not conflicts differential. f(z) = Re(z). In other words,
+if you write z as x + iy then f of x+iy is simply the real part of what we plug in. So just the x. Let's use the f (z + h)- f(z) over
+h form of the difference quotient. And let's write h as hx, the real part
+of h, + i h y, the imaginary part of h. Then what is f of z + h? z + h would be x + h x + i y + h y. And if we only look at the real part
+of that, that real part is x + hx. We subtract from that f(z),
+f(z), this is x. We see that there is an x here and
+we subtract x here, so that cancels out. The numerator becomes simply hx. The denominator is h,
+hx was the real part of h. So the difference quotient is simply
+the real part of h divided by h. What happens as h goes to 0? As we noted earlier, there are lots
+of different ways of approaching a point, h could go to 0 along the x axis. Or it could go to 0 along the imaginary
+axis, or along all kinds of other ways. But let's check out for starters what happens when h
+approaches along the real axis. So h in other words is real elements of the form h x+ IX0 does not
+have an imaginary part. In other words the real part of h which is hx is the same as h itself because
+there is no imaginary part. In other words in this quotient
+right here the numerator is equal to the denominator which means the whole
+fraction evaluates to 1 and as h goes to 0 just along
+the real axis the limit is 1. So then it exists as h approaches
+0 along the real axis. Next let's have h approach 0
+along the imaginary access. Then h has not real part and
+only has an imaginary part, so H is of the form = + i times hy. In other words the real part of h is 0. So again in this fractional real
+part of h over h the numerator is 0. So the whole fraction evaluates to 0. And in the limit as h approaches 0 along
+that imaginary axis, the limit is still 0. That's a different limit than we
+obtained coming along the real axis. Let's next look at a sequence hn that
+approaches 0 in a spiral type way. hn is i to the n over n. We looked at the sequence before. We know the sequence approaches 0. What is the real part of hn divided by hn? The dividing by n happens in both
+numerator and denominator, and so therefore, it cancels out. The numerator is real part of i to
+the n over n and the denominator is i to the n over n, which simplifies to
+real part of i to the n over i to the n. i to the n is 1 or -1 or i or -i. And you look at the quotient for
+even n's, provided that n is real, and so the quotient is 1. For odd n's, i to the n is purely
+imaginary, it's i or -i, and the quotient is therefore 0,
+because the real part of i to the n is 0. The sequence therefore bounces back and
+forth between 1 and 0 and does not have a limit as
+n goes through infinity, because it does not approach one of these
+numbers, it bounces back and forth. Altogether we see that this function f
+is not differentiable anywhere because the limit of the difference
+quotient does not exist. It is different depending on
+how we approach the origin. Sometimes the limit
+doesn't even exist at all. So this function does not have a
+derivative anywhere in the complex plane. Here's another non-example, f(z) equals the complex conjugate of z. So what is f(z + h)-f(z) / h? Well, (z + h) gets mapped under f to z + h conjugate. And we've learned that we
+can pull that inside, so we have the conjugate of z
+plus the conjugate of h. And that's what you see right here. We subtract from that f(z), which is the
+conjugate of z, and again, we see, there's the conjugate of z, we subtract the
+conjugate of z, those two canceled out, and the numerator is just the conjugate
+of h, the denominator is h. Does that have a limit as h goes to 0? I don't think so. Again, if h is a real value,
+then the conjugate of h is simply h. And the quotient is equal to 1
+approaches 1 as h goes to 0. If h is purely imaginary, then
+the conjugate of h is the opposite of h. And so, the quotient's value is to -1,
+and has a limit of -1. And if h approaches the origin in any
+other way, it gets even more complicated. Certainly, the limits are not the same,
+and that already proves to us that this limit of the difference quotient
+does not exist as h approaches 0. And therefore, f is not differentiable
+anywhere in the complex plane. Here's a fact. It's the same as is true
+in real value calculus. If f is differentiable at z0, then it must be continuous at z0,
+not the other way around. A function can be continuous
+without being differentiable. But if it happens to be differentiable, that's a stronger concept
+than being continuous. It applies continuity. Here is how you would prove this fact. Instead of showing that
+the limit of f(z)=f(z0), which is what we need to show for
+the function to be continuous at z0, we'll bring this f(z0) to the other side,
+and we look at f(z)-f(z0), which then
+needs to be equal to 0 in the limit. So we look at f of z-f of
+z0 as z approaches z0. And here comes the trick. We divide by z-z0, well,
+you can't just do that. But if you also multiply by z-z0, then
+we really just multiply f(z)-f(z0) by 1. So, that's allowable. But interpreting this as
+the difference quotient times z-z0, if the function f has a derivative, then the difference quotient has a limit
+as z approaches z0, that limit is f'(z0). z-z0 also has a limit as z approaches z0,
+namely, 0. So the limit is f'(z0) times 0,
+and that is 0. Since f(z)-f(z0) approaches
+0 as z goes to z0, the function f is
+therefore continuous at z0. Again, a function can be continuous
+without being differentiable. But it can't be differentiable
+without being continuous. We'll see an example about this shortly. Here's another definition. A function f is analytic in
+an open set in the complex plane if it is (complex) differentiable
+at each point in U. We need differentiability
+in a whole open set. We're not interested in functions that
+are simply differentiable just at a point. We want them to be differentiable
+in a whole open set. If that open set happens to be
+all of the complex plane, so if the function is differentiable
+at each point in the complex plane, we've seen some examples, then we
+also say this is an entire function. Here are some examples. Polynomials are analytic in C
+because we showed that anything of the form z to the n is differentiable
+everywhere in the complex plane. We can even put a constant in front of it. That's still differentiable. And then we can add to that another term d times z to the m with a different power,
+and more and more of these. So these form polynomials, and therefore, polynomials are analytic in the complex
+plane, and therefore entire functions. Rational functions, which are polynomial
+divided by another polynomial, are by the quotient rule analytic
+wherever we're not dividing by 0. So whenever the denominator is nonzero,
+a rational function is also analytic. We've seen that the function f(z)
+equals the complex conjugate of z is not differentiable anywhere, and so
+it's also not analytic anywhere. Similarly, the real part of z
+wasn't differentiable anywhere, so it's also not analytic anywhere. Let's look at another example,
+f(z) is the absolute value of z, squared. Remember how to find the absolute
+value squared of a complex number? We had various ways that was defined. One way was to take x squared + y
+squared if z was of the form x + iy. But once we learned about
+the complex conjugate, we also learned that this is equal
+to z times the conjugate of z. Because z times the conjugate
+of z was x+iy times x-iy. And if you multiply through, this
+becomes x squared-i squared y squared. i squared is -1, so
+we're back to x squared + y squared. Let's apply that in our case here. We need to look at the difference
+quotient, which is f(z+h)-f(z)/h. f(z + h) is the absolute
+value of z+h squared. f(z) is the absolute value of z squared. And now we use the fact that the absolute
+value squared can be obtained by taking the complex number and
+multiplying it with its conjugate. The conjugate of z plus h is the conjugate
+of z plus the conjugate of h. And you subtract from
+that's still z squared. When we multiply through in z + h
+times z conjugate + h conjugate, we get a z times z conjugate, which is
+just the absolute value of z squared plus z times h conjugate which you see
+right here plus h times z conjugate, this term, plus h times h conjugate, and
+there's still the minus z squared here. Again, you see the z
+squared terms is added and then subtracted so they cancel out. What we're left with are these three
+terms in the numerator divided by h. The second and the third term have an h
+in them, so we can cancel out that h. The first term however,
+does not have an h. And so
+we cannot cancel anything out there. What we're left with therefore is a z
+bar from the second term where the h cancels out, and an h bar from
+the third term where the h cancels out, but a z times h bar over h,
+where the h didn't cancel out, and that is the troublesome term. As h goes to 0, z bar is not affected. That's just regular z bar. h bar just goes to 0 as h goes to 0. But h bar over h, as we saw earlier,
+does not have a limit. So, unless this term isn't there,
+miraculously, it will cause trouble and
+will make the limit not exist, except when this z is equal to 0,
+therefore making this term nonexistent. So if z is nonzero,
+then this limit of the difference quotient simply does not exist
+because of the h bar over h issue. If z is equal to 0, that issue's gone and the limit is simply 0,
+because if z is 0, z bar is also 0. So add 0, the limit of
+the difference quotients exists, so f is differentiable at
+0 with derivative 0. It is not differentiable anywhere else. One point is not enough to
+call the function analytic. We need the function to be differentiable
+in th whole open set in order for it to be called analytic. So f is not analytic anywhere. Note, however, that this function
+is a perfectly continuous function, it's continuous everywhere in C. It's only differentiable at the origin,
+it's not analytic anywhere. Next stop are the Cauchy Riemann
+equations. Those are equations that relate
+the derivatives of u and v, if we write f as u+iv,
+it relates the derivatives in the x and the y direction of u and
+v with each other. I'll explain that in the next lecture.

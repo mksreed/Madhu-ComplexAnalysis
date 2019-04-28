@@ -1,0 +1,254 @@
+Welcome back to our third week in our
+course, Analysis of a Complex Kind. This is the second lecture this week and we'll discuss
+the Cauchy-Riemann Equations. These are equations that result from
+a function being complex differential As a reminder, remember that a function,
+f, that is a complex function, can be split up into its real part
+view and its imaginary part v. When we write z as x + iy,
+then f(z) becomes u(x,y) + iv(x,y), where now u and v are functions
+that spit out real numbers and take two real parameters, x and y. Let's look at an example just
+to remember this setting. Suppose f(z) is the function z squared, with z being x + iy,
+that becomes x + iy quantity squared. And if I multiply through,
+this is x squared plus 2xiy. I wrote that term back here. Plus, i squared, y squared, but
+i squared, y squared, is minus y squared, and so it's purely a real, and
+I wrote it here in the front. If I collect all the real terms,
+I get x squared minus y squared, so that's my u(x,y) and if I collect
+all of the purely imaginary terms, I get 2xy, which is v(x,y). And so my function u(x,y) would
+be x squared minus y squared and v(x,y) would be 2xy. For example, if z is the number 2 + i, I could just calculate
+f(z) by taking 2 + i and squaring it, which is 4 + 4i + i squared. Since i squared is -1,
+this simplifies to 3 + 4i. Alternatively, I could use my functions,
+u and v, to evaluate the function, f. So, writing z as x + iy,
+2 + i means that x is 2 and y is 1, the number that i
+gets multiplied with here. And so, u(x,y) and
+I plug in x = 2 and y = 1. So, it's u(2,1). And since the function, u, is x squared
+minus y squared, it takes the first parameter, that's everything squares it,
+and subtracts from now the second parameter squared, so 2 squared minus
+1 squared, that's 4- 1, that's 3. And similarly, v(x,y) would be v(2,1). And since v takes those two parameters,
+multiplies them and multiplies the result by 2,
+I would get 2 times 2 times 1, which is 4. So f(2 + i) can also be evaluated
+by taking u(2,1) + iv(2,1), u(2,1 )was 3, v(2,1) was 4,
+so 3 + 4i, and that is indeed the same result we obtained by
+just plugging in z after the function, f. So these are two alternative ways of
+looking at the same function, and they'll become helpful when we
+want to look at the function, u, and the function, v, and
+their differentiability properties. What do we already know about
+the function z squared? Well we know this function is
+differentiable everywhere in C, in fact, we found its derivative to be 2z for
+all z and C. Let's just start by looking at
+the function u(x, y) more carefully. Again, u(x,
+y) is simply x squared minus y squared. So, for example, if we fix the variable,
+y, at a certain value, for example, y = 3, then the function,
+u, only depends on x, because u(x,y) is then u(x,3)
+if we always plug in 3 for y, and the function u(x,3)
+becomes x squared minus 9. This function only depends on x,
+because y is fixed. And therefore we can differentiate
+this function with respect to x. There's no y in there. I can find the derivative as I
+do in calculus of the function x squared minus 9. The derivative of that function is 2x. We write du/dx(x,3) is equal to 2x, that derivative we just found. This is a notation for that derivative. We write du/dx, it's called the partial
+derivative of u with respect to x, because there also would have been
+a choice of finding a derivative with respect to y, and to indicate that I had
+a choice, I use this funny, curly d. So it's a partial u with respect to
+partial x, that's what that's called. But all that means is,
+we fix y at a certain value and find the derivative with respect to x. Another notation is to omit
+this partial u, partial x, and put a little x next to u. That also indicates I'm going to take
+the derivative with respect to x. So that was 2x. More generally, if I plug in
+a different value for y, for example 4, then u(x,4) would be x squared minus 16,
+the derivative is still 2x. And we notice, no matter what value
+of y I plug in, as long as I fix it, the derivative of u with
+respect to x is going to be 2x. And so we write more generally,
+du/dx(x,y), or ux(x,y) is 2x. And again, this is called the partial
+derivative of u with respect to x. But we can do the same thing for the
+function, v, v(x,y) is the function 2xy. So for example, again,
+if we fix y = 3, v(x,3), we plug in 3 for y,
+it's 2 times x times 3, that's 6x. The derivative of this function
+with respect to x is 6. And so we would write dv/dx(x,3) or
+vx(x,3) equals 6. More generally,
+if I have a different value for y, for example, y = 4,
+then v(x,4) would be 2 times x times 4. So that would be 8x. And so, the derivative, vx(x,4) would be 8. If I have yet another value, try v(x,5), v(x,5) is 10x. So that derivative would be 10. So the derivative seems to depend on y,
+even though we're fixing y, the x derivative depends on y. If we look at this function very carefully, v(x,y) = 2xy. If you think about this abstractly and
+say to yourself, two was a constant, and I'm going to keep y constant as well,
+I'm not going to change it, I'm going to plug in a value,
+I just don't know which value that is, but if I fix these two numbers, than this
+is really equal to these two constants, 2y, and those are both constant, times x. And the only variable
+that really varies is x. The derivative of such a function,
+with respect to x, how do you find the derivative
+while constants go to the side? So I keep the 2y, and
+then differentiate x. But what is the derivative of x? It's 1. In other words, the derivative
+of this function is simply 2Y. The X derivative of V is two times Y and that agrees with these results what we
+got eight when Y was equal to four, ten when Y was equal to five,
+six when Y was equal to three. So, generally we have the X derivative
+of V is equal to two times Y. This is called the partial
+derivative of V with respect to X. Obviously, we can do the same
+thing by fixing X and differentiating with respect to Y. For example, when X is equal to two, then U of XY is U of 2Y which
+is four minus Y squared and the derivative of four minus Y
+squared with respect to Y is minus 2Y. This is the regular
+derivative from calculus. More generally, if I look at this
+function U of XY, as a function of Y and X is something fixed, even though
+typically X is the variable that varies. If I now think in my head,
+this is a constant and I find the derivative of this function. The derivative of a constant
+sitting there by itself is zero. The derivative of minus Y squared if
+Y is the variable, that's minus 2Y. So more generally, the partial derivative of U with
+respect to Y at X and Y is minus 2Y. Look at the notation. It's very similar to the notation
+we looked at earlier, except the partial X in the denominator
+here was replaced by a partial Y. Similarly, we put a little Y
+next to the U to indicate we're using the partial derivative
+of U with respect to Y. You can use either of those notations,
+almost to use the U sub Y notation. I can do the same thing for a V. Again, let's fix an X value, two in this example, and
+look at V of X and Y. V of X and Y is then two
+times two times Y, so four Y. And the derivative of the function four Y,
+with respects to Y, is equal to four. So we would write Div V, Div Y of two and
+Y or V Sub Y of two and Y equals four. More generally, if I look at this function
+two times X times Y and X is fixed and Y varies,
+then the function V of X and Y could be written as two X,
+these are my two constants, times Y. So that if I want to find the Y derivative
+of this function, it's a constant times Y, the derivative of a constant times
+Y is simply the constant, 2X. So more generally the partial derivative
+of V with respect to Y is two times X. Let's summarize what we have found. We started with a function,
+F of Z equals Z squared, which we broke up into a real part U,
+and its imaginary part V. U was X squared minus Y squared. V is 2XY, and
+then we found all kinds of derivative. The derivative in the complex
+sense of F was 2Z. And then we had these somewhat real types
+of derivatives, the partial derivatives. UX is 2X, UY is minus 2Y,
+VX was 2Y, and VY was 2X. We notice certain things. UX is 2X. So is VY, so UX is equal to VY. We also notice VY is minus 2Y,
+and VX is 2Y. They seem to be opposites of each other. UY is minus VX and finally, we notice when you look at the derivative of F, F prime. That's two times Z. We could write that as 2X plus I times 2Y. 2X, that's my UX derivative. 2Y, that's my VX derivative. So I could write this derivative F prime, I could put that together
+from UX plus IVX. We call that the FX derivative. Alternatively, I could also use UY and VY. Since UX is equal to VY. I could write this as VY plus I times and
+now VX is equal to minus UY. And if I've factor out an I. This becomes minus UY minus IVY. Because I times I is minus one together
+with this minus one that gives me just this VY. If I indeed factor a minus
+I as I did right here, I find that F prime is the same
+as minus I times UY + IVY. That's the FY derivative. Taking all of F and taking the derivative
+of F simply with respect to Y. So F prime is the same thing as
+taking FX or minus I times FY. Was that coincidence? Was it just true for
+the function Z squared? Let's look at another example. Let's look at the function F of Z
+equals 2Z cubed minus 4Z plus one. Again we write Z as X plus IY and when we
+plug that in, we find two times X plus IY quantity cubed minus four times
+quantity X plus IY plus one. Now we need to multiply
+this through unfortunately, so it gets a little bit ugly. X plus IY quantity cubed
+is X cubed plus 3X squared IY plus 3X times IY squared, so I squared Y squared plus IY cubed, which is I cubed, Y cubed. Then we would subtract from
+that four times X plus IY, so 4X and 4IY, and
+then add the one in the end. Let's collect turns. You want to find the function U and
+the function V. U is all the real parts and V consists
+of all the purely imaginary parts. So, what's real? X cubed is real. Well, that two in front of
+it that gives me 2X cubed. X squared IY, that's not real. 3XI squared Y squared,
+I squared is negative one, so this is another real term. With a two in front of it,
+that becomes 6XY squared and with a negative sign
+because of the I squared. I cubed is minus I, so that's imaginary. Minus 4X is right here. And then there's finally
+the one that's right here. So we've now collected all the real terms. The rest is imaginary terms. 3X squared IY goes under B
+with a two in front of it. That becomes 6X squared Y,
+a factor of the I. Then I have I cubed Y cubed. I cubed is negative I. So this is negative Y cube with a two
+in front of it, so negative 2U cubed. And finally minus 4IY shows up as minus four in my function V. In other words, u of x and
+y is 2x cubed- 6xy squared- 4x + 1 and v of x and y 6x squared y- 2y cubed- 4y. Let's find again, the x and
+the y derivatives of these functions. Remember to find the x derivative of u, we pretend y is a constant such as 4 or
+16, just the constant. And we just take the derivative with
+respect to x as we're doing calculus. So, the x derivative of u becomes 6x squared- 6y squared. Y squared is a constant, so that goes to
+the side, derivative of x is simply 1- 4. The derivative of this constant, 1 which
+has no constant attached to it is 0. So, that gives us the x derivative of u. If you wanted to find the y derivative
+of u, you would have to keep x constant. Now, 2x cubed is a constant
+with no y attached to it. The derivative of such a constant is 0. The derivative of -6xy squared,
+with respect to y, is found by realizing -6x
+are constants that go to the side. y squared is the function that varies,
+depending on y. Its derivative is 2y,
+times the constant, I find -12xy. - 4 x doesn't depend on y,
++ 1 doesn't depend on y. The derivatives of these
+charts are just 0. Similarly, I find the x derivative of v. X derivative of v,
+y is constant now, is 12xy. 2y cubed and 4y are constants that don't
+depend on x, their derivatives are 0. The y derivative of v,
+6x squared is a constant multiplied by y. So, the derivative of that is 6x squared. The derivative of 2y cubed is 6y,
+the derivative of 4y is 4. So, I find all of these derivates. Let's see what happened. Let's look at ux and vy and we realize, again, ux is equal to vy, let's look at uy and
+compare that to the vx. Again, they're opposites of each other. So again, ux is vy and uy is -vx but this fraction was a whole lot more
+complicated than the previous example. So now, I'm starting to think
+maybe this was not coincidence. Indeed, it was not. Let's look at how this was all
+related to the derivative of f. Again, I wrote down ux, uy,
+vx and vy for us to remember. Let's find f prime,
+f prime in the complex sense. You find the complex derivative
+of 2z cubed- 4z + 1. The derivative of 2z cubed is 6z squared,
+the derivative of -4z is -4. The derivative of 1 is
+just the constant of 0. So, the derivative of f is 6z squared- 4. If we plug in z being x + iy, this becomes 6(x + iy)
+quantity squared- 4. You can multiply through. x+iy quantity squared isx
+squared- y squared + 2ixy, 2ixy times 6 is where
+this 12ixy comes from. And here, I wrote down the real part, which consists of 6x squared
+i multiply x squared by 6. - 6y squared, again,
+the -y squared times six. And -4 coming from this 4 right here. But when I look at this carefully,
+I recognize that this real term here, 6x squared- 6y squared- 4, that's ux. And this term, 12ixy, that's i times vx, in other words,
+f prime again is ux + i times vx. Or again I could also write
+as -i times uy + ipy. So again, f' = fx(z) or -ify(z). So, it's no longer a coincidence,
+here's a theorem. Suppose, f is broken up into u + iv. And suppose that it is
+differentiable at a point z0. Then, these partial derivatives all
+exist at z0 and satisfy these equations. Ux is a vy and uy is -vx. This is a consequence of
+being differentiable. These equations are called
+Cauchy-Riemann Equations. The very famous equations
+named after Cauchy Riemann. Also, f prime,
+if f is differentiable in a complex sense can then be written as ux + ivx which
+is the x derivative of f at z0 or -i times uy + ivy which is -i
+times the y derivative of f at z0. Again, what this theorem is saying
+that if a function is differentiable in the complete sense, then, it must
+satisfy the Cauchy-Riemann Equations. It doesn't say that the Cauchy-Riemann
+Equations are satisfied for all functions, only for those that
+are differentiable in the complex sense. If you wanted to prove this theorem, which
+we're not going to do in this lecture, it would actually not be that hard. You'd look at the difference quotient. f(z0 + h0 -f(z0)/h. And the limit of this different
+quotient must exist if f is differentiable at z0 and
+that's your assumption. The limit of the difference quotient
+existing as h goes to 0 means we can let h go to 0
+whichever way we want to. In particular, we could look at h go
+on to zero along the real axis and we could also look at h approaching 0,
+along the imaginary axis. We could also look at h goes
+to 0 all kinds of other ways. But it's actually sufficient in this
+proof to look at these two directions. So, you'd let h approach
+0 along the real axis. And then, along the imaginary axis line. And both times, this limit must exist and both times you must get the same limit
+because the limit must exist and be the same no matter how
+h approaches the origin. But by looking at these two limits and realizing that they must be the same,
+the Cauchy-Riemann Equations follow once you recognize the partial
+derivatives in the expressions. Let's look at another example. Let's look at the function f(z)
+which is the conjugate of z. So, x- iy(z) is x + y and
+the conjugate of that is x- iy. In other words, my function u which
+is the real part is the x and my function v is -y. It's very simple to find
+the x in the y derivatives. The x derivative of the function x is 1, the y derivative for
+this function doesn't even depend on y. So, this is a completely constant
+function for all ys concerned. And so, the y derivative is simply 0. For the function v, it doesn't depend
+on x, so the x derivative is 0. And the y derivative is simply -1. Now, when you compare ux and
+vy, they're not the same. So, the Cauchy-Riemann
+equations are not satisfied. uy and vx indeed Are opposites of each other as 0 is the same as minus 0. But ux is not equal to vy while
+uy could be regarded as minus vx. And therefore, the function cannot
+be differentiable anywhere. We don't have to check if f of z plus h
+minus f of z over h exists in the limit. We know, since the Cauchy-Riemann
+equations are not satisfied, this function cannot be differentiable. because if it were differentiable, then
+we would know from the previous theorem that the Cauchy-Riemann equations
+would have to be satisfied. Again, remember,
+if f is differentiable at a point z0, then the Cauchy-Riemann equations
+must hold at that point. Now, is the reverse statement also true? Is it true that if at a point the
+Cauchy-Riemann equations are satisfied, then that implies the function
+is differentiable at that point? The answer is almost. Here's the theorem. Suppose f is defined on a domain
+D in the complex plane. Again, a domain is simply
+an open connected set. Then f is analytic in that domain if and
+only if u and v have continuous first partial derivatives on D
+that satisfy the Cauchy-Riemann equations. So this theorem says two things. It says, if f is analytic, then u and v satisfy the Cauchy-Riemann equations and
+have continuous first partial derivatives. It's kind of what we already knew. But it also says, if u and v have
+continuous first partial derivatives, then f is analytic if these derivatives
+satisfy the Cauchy-Riemann equations. Continuous is the important part here. The first partial derivatives, it's not
+enough for you to be able to just find ux, uy, vx, vy, these are the first partial
+derivatives, they need to be continuous. If they are continuous and
+satisfy the Cauchy-Riemann equations, then f is analytic. It's a very subtle point, and
+this would mostly not be important for us. But one can actually
+find counter examples, one can find a function that has
+these first partial derivatives and they satisfy the Cauchy-Riemann equations,
+yet the function is not differentiable. And the reason is that there is a point
+where these functions are not continuous. But for now let's just look at an example. Let's look at the function f(z) = e to
+the x cosine y + i e to the x sine y. This is our regular exponential function
+from real value calculus and cosine, our regular cosine function, and
+sine is our regular sine function. In other words, the function u is
+the function e to the x times cosine y, u of x and y is e to the x cosine y. And v is the function e to the x sine y. I can again find the x derivative of u,
+the y derivative of u, the x derivative of v,
+and the y derivative of v. Let's start with the x derivative of u. In that case, cosine y is simply a
+constant that I multiply e to the x with. The constant goes to this side and all I need to find is
+the derivative of e to the x. But e to the x has this amazing property
+that its derivative is the function itself. In other words, the x derivative of u is
+the same as u's, e to the x cosine y. If I wanted to find the y derivative of u? Now e to the x is my constant. And I need to find
+the derivative of cosine y. The derivative of cosine
+y is minus sine y, so the derivative becomes
+minus e to the x sine y. Similarly, the x derivative
+of v is e to the x sine y, and the y derivative of v
+is e to the x cosine y. If I look at these functions,
+I realize ux is equal to vy, and uy is equal to negative vx, so the Cauchy-Riemann equations
+are satisfied, and these are all products
+of continuous functions, so ux, uy, vx and vy are continuous in C. Therefore, by the theorem, this function
+f is an analytic function in C. In fact, that makes an entire function
+because it's analytic in the entire complex plane. This function f( z) = e to the x times
+cosine y + i times e to the x sine y, is going to be our complex
+exponential function. We'll study it in the next lecture.

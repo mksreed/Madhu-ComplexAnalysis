@@ -1,0 +1,228 @@
+Welcome to the third lecture in our
+third meeting of the course Analysis of a Complex Kind. Today we'll learn about
+the complex exponential function. We started talking about this
+function at the end of last class. We discovered that the function
+f(z) defined by e to the x times cosine y plus i times e to
+the x sine y is an entire function. Where z=x+iy and e to the x cosine y and sine y are just the regular real-valued
+functions that we know from calculus. Let's look at some of
+the properties of this function. Suppose, for example, that y = 0. So this y right here is equal to 0. Well, cosine of 0 = 1. And so this y would also be equal to 0,
+but sine of 0 = 0. So in that case,
+this function would simplify to the e to the x times 1 +
+plus i e to the x times 0. Well, that's just e to the x because
+this whole last term gets canceled out by the 0. So when y = 0,
+then f(z) is simply e to the x. In other words, the function f agrees
+with our regular exponential function if you plug in something real that
+doesn't have an imaginary part. Another thing to notice is that we
+could rewrite f(z) a little bit. We can factor out the e to
+the x term right here, and are left with e to the x times
+parentheses cosine y + i sine y. But cosine y + i sine y we found
+an abbreviation for, we called that e to the iy even though we weren't quite
+sure why we called it e to the iy. It was an abbreviation at the time. But now that we're looking
+at e to x times e to iy. We would like to think of this as e
+to the x+iy because the rules for our regular real-valued exponential
+function would indeed allow us to combine these two exponents. We haven't proved any
+such thing right now, but this is a reasonable thought to have. And that looks like e to the z,
+whatever e to the z might be. So with these thoughts in mind, we actually define the complex exponential
+function e to the z exactly like that. It's also sometimes denoted exp(z). And it's defined by e to the z is e to
+the x times e to the iy, where z=x+iy. And e to the iy is still shorthand for
+cosine y + i sine y. This is the complex exponential function
+and we'll explore it in today's lecture. Again, as a reminder, e to the z
+is e to the x times e to the iy. What is the length of e to the z? So how far is e to the z from the origin? Well, the absolute value of e to the z can
+be found by simply taking the absolute value of e to the x times e to the iy. And we know the absolute value
+of the product of two complex numbers is the product
+of the absolute values. So norm of e to the x,
+norm of e to the iy. But e to the iy,
+remember what that really is? e to the iy is short for
+cosine y + i sine y. And it is simply a number on
+the circle of radius 1, such that the angle formed with
+a positive real axis is y. This is e to the iy, which was cosine y + i sine y. All numbers of this form have distance
+1 from the origin because they're on the circle of radius 1. So the norm of e to the iy is 1 just by
+how this number e to the iy is defined. The norm of e to the x. e to the x is our real-valued
+exponential function. Remember what that looks like? e to the x looks like this. This is the regular exponential function. It's always above the x-axis,
+it's always positive. It can never be negative. So the norm of e to the x
+is simply e to the x. What's the argument of e to the z? Now that we know how far e
+to the z is from the origin, we would like to know what angle does
+it form with a positive real axis? What's the argument of e
+to the x times e to the iy? What is e to the x times e to the iy? That's a number in polar form,
+where this is its length or radius. But for a number in polar form,
+radius times e to the i something, the something gives you the angle that
+it forms with a positive real axis. So the angle this number forms
+with a positive real axis is y. Truthfully speaking, I should have written
+here +2 pi k, where k is any integer. So the way you should read this equation
+is an argument of e to the z is y. What is e to the z + 2 pi i? So suppose you add 2 pi i to your z and then stick that into
+the exponential function. Well, since 2 pi i is purely imaginary, that means that you're adding
+that to the imaginary part of z. So it's the same as e to the x
+times e to the i(y + 2 pi). We're adding the 2 pi to
+the imaginary part of z. But e to the i theta is a function
+that is periodic with period 2 pi, because we're looking at the angle that
+is formed with the positive real axis and it just starts repeating after 2 pi. So e to the i(y + 2 pi) is
+the same as e to the iy. So that this simplifies to the e to the x
+times e to the iy, which is e to the z. So the function e to the z is periodic. And the period is 2 pi i. When you add 2 pi i to z,
+the exponential function remains the same. Finally, we would like to establish some
+properties that are similar to the ones that we have for
+the real-valued exponential function. We would hope that e to the z+w
+is e to the z times e to the w. Let's check that this holds with our
+definition of e to the z which is up here. What is e to the z+w? We'll write z as x + iy and
+w as u + iv and plug that in. So e to the z+w becomes
+e to the (x+iy)+(u+iv). Let's reorganize and collect the real
+parts and collect the imaginary parts, because we'll need those to apply the
+definition of our exponential function. The real part of the sum and
+the exponent is x+u. And the imaginary part is y+v. Now we know e to this complex
+number is e to the real part, so e to the (x+u), times e to the i times
+the imaginary part, so e to the i(y+v). That's just by definition of
+the exponential function. e to the x+u,
+now we're talking all real values. x is real, u is real, and e is our regular
+real-valued exponential function, so the rules apply. This is e to the x times e to the u. e to the i(y+v), we proved that that
+equals e to the iy times e to the iv. We use the addition theorems for
+sine and cosine functions. And now we just reorganize things again. We collect e to the x, and
+e to the iy, and then e to the u. And since it's a product
+of complex numbers and multiplication is commuted if
+we can just reorganize things. But e to the x times e to the iy,
+that's simply e to the z. And e to the u, e to the iv is e to the w. And we established indeed,
+that the same rule, holds for complex values,
+as it does for real values. What is 1 over e to the z? Well, I claim this e to the negative z,
+and the reason is that, when I look at e to the z
+times e to the negative z, by the rule we just established,
+we can simply add the two exponents. So, that's e to the z plus negative z,
+so z minus z. But z- z is 0, and e to the 0 is 1. So, e to the z times e to -z is 1. Now, if we divide both sides of
+this equation by e to the z, you find that either
+the -z is 1 / e to the z. E to the z is an entire function,
+we already showed this. That's what set us off,
+you've defined this function. What's the derivative? The entire function has a derivative. Remember that, the way the function e to
+the z is defined, its real part is e to the x times cos y, and its imaginary
+part is e to the x times sin y. Again, we can find these partial
+derivatives that we learnt about during the last lecture. The partial derivative of u with
+respect to x means we differentiate e to the x cosine y with respect to x. Keeping in mind that y
+is fixed in a constant. The derivative of e to the x,
+e to the x cosine y is the constant. So ux is e to the x cosine y. Similarly vx is e to the x sine y,
+U y, we now keep x constants. So either the x is the constant, we need to find the derivative
+of cosine y which is- sine y. And vy is e to the x cosine y. We learned, that for
+a function that's analytic, it's derivative can be found by
+taking Ux plus iVx, so therefore, the derivative of our exponential function
+is e to the x cosine y which os ux. Plus i times e to the x sine y. That's the bx. But that's e to the z. In other words,
+the derivative of e of z is e to z again. Or in symbols,
+dbz of e to z Is e to the z. Notice that we're using not the partial
+derivative symbols which were d dx. We found, we used that notation for
+the partial derivatives. This is the complex derivative where
+we use the regular d for that notation. So similarly to the view value exponential
+function, to the derivative of the exponential function is
+the exponential function itself. Similarly, the derivative of
+e to the constant times z. How do you find that? This is actually the composition
+of two functions. The exponential function composed for
+the function that multiplies z by a. In other words,
+when you define the derivative of the outside function times
+the derivative of the inside function. The inside function is a times z. It's derivative is simply a. Therefore, we get a times e to the a-z. By the chain rule for
+the derivative of e to the az. What is e to the complex conjugate of z? The complex conjugate of z is x-iy,
+if z was x+iy. Therefore, e to the z conjugate
+= e to the x times e to the -iy. But we showed earlier, and
+we can remember this in the picture. What is e to the -iy? Even the -iy means we're
+taking a negative angle, -y. And get a number count here. If we reflected that with respect to the x
+axis, we will get this number up here, so this is Z to the minus IY and
+this is E to the IY and they're complex conjugates of
+each other as this picture shows. In other words E to the minus IY
+is the conjugate of E to the IY. E to the X's real value. We might just as well put
+a conjugate on top of it. It makes no difference because real
+number equals its complex conjugate. So we can extend the conjugation
+over the entire product. But that's a conjugate of e to the z. In other words, e to the conjugate of
+z equals the conjugate of e to the z When is e to the z = 1? Well, we need e to x
+times e to iy to be 1. This is a number in polar form. When is a number in polar form equal to 1? Well, its length needs to be 1,
+its angle needs to be 0. Or a 2 pi or a 4 pi. So, in other words,
+we need e to the x to equal 1, and we need y to be 0 or 2 pi or 4 pi. When e to the x equal to 1? That's the case when x is equal to 0. So we need x to be 0 and
+y if the form 2k pi, In other words we'll need z to be of the form x+iy, so 0+i2kpi. So those are the points where the
+exponential function takes the value 1. When is e to the z equal to e to the w? We already saw that if z = w + 2 pi i, then e to the z = e to the w. But are there other possibilities? For e to the z to equal e to the w. Let's find out. If we divide both sides of
+this equation by e to the w We know that one over e to
+the w is e to the minus w, so e to the z divided by e to the w
+becomes e to the z minus w. And that then needs to be = e to
+the w over e to the w which is one. When is e to the z-w=1? Well that is the case when
+z-w is of the form 2 pi ik. In other words when z is =
+w+a multiple of 2 pi ik. So, the cases we observed earlier were the only ways for
+e to the z to equal e to the w. Let's understand the mapping
+w equals e to the z. We did this earlier for
+some other functions. We look at as a mapping from
+the z plane to the w plane. With w being equal to e to the z. For example,
+let's look at images of horizontal lines. What's a horizontal line? A horizontal line is of the form
+x + iy0 where y0 is fixed. We're fixing the imaginary part and
+just varying x. For those points x + iy0,
+they get mapped to e to the x + iy0, which is e to the x Either the I, Y zero. But Y zero is a fixed number so,
+this is not going to change this is fixed. And the only thing that
+can change is E to the X. And E to the X if X runs from
+negative infinity to infinity, E to X will go from zero to infinity,
+it never takes the value zero but anything as close to zero as possible. And even the IY is a fixed
+angle from the origin. Let's look at some examples. For example,
+this red dotted line right there. What is its image? It's the line where y0 is equal to pi. What is e to the i pi? e to the i pi is equal to -1. Forming an angle of pi
+with a positive real axis. In other words, all these numbers, either the x times e to the i-y-zero
+lie in the negative real axis. So the image of the red dotted line
+right here is the negative real axis. Except in the origin. Let's look at the green line next. What is its image? In my picture looks like the imaginary
+part is a little bit bigger than pi/2. This angle here is just
+a little bit bigger than pi/2. Even the iy0 is a point
+on the unit circle, whose radius forms the angle
+y0 with a positive real axis. And therefore the image of the green
+line is this green line right here. Let's look at the turquoise line. It looks like its imaginary
+part is around pi over 4. So the image is going to be this
+turquoise line right there. How about the yellow line? The yellow line up here has an imaginary
+part just a little bit bigger than pi. So we're looking at this angle right here,
+and therefore the image of the yellow line
+is this radial segment down here. You notice that I drew another yellow line
+in the Z plane a little bit above- i pi. And indeed this reflects that
+the exponential function is periodic with periods 2 pi i. This second yellow line has distance
+2 pi i from the other yellow line. In other words, its image is the same
+as the image of the other yellow line. So these two yellow lines both get mapped
+to the radial segment over in the W plane. Finally there's a purple line here and you can check that it gets mapped to
+something like this purple line over here. What are the images of vertical lines? A vertical line is of the form x0 + iy for
+now x0 is fixed. So now the real part is fixed and
+the imaginary part varies. Those points get mapped
+to either the x0 + iy, which is e to the x0 times e to the iy and
+so now this number is fixed. The distance from the origin is fixed for
+all these images and the angle varies. In other words for a fixed line that's
+vertical, it's image is a circle. For example the yellow line that is on
+the imaginary axis so x0 would be 0. Gets mapped to e to the 0
+just 1 * e to the i y. But e to the iy. If y is allowed to vary from
+negative infinity to infinity. Gets matched to the circle. And this circle is mapped over and
+over and over again. Because this keeps repeating
+because there's 0 here. And say 2 pi i is right here. Then this little short segment all ready
+gets mapped to the full unit circle. And afterwards, we just keep repeating. Similarly, the red dotted line gets
+mapped to e to the x0 * e to the iy, this x0 is a little bigger than 0,
+that's what e to the x0 is bigger than 1. So it gets mapped to a circle whose
+radius is bigger than the previous one. And if we move over to the green line, its radius is going to be even bigger
+then the one with the red circle. Similarly, if I go to negative x0, e to the something negative is
+going to be a number less than 1. It's still positive but
+a number less than 1. So these radii are going to
+be less than 1. And the, the circles are going to
+be sitting inside the unit circle. Putting it all together, we can actually figure out what
+the image of a vertical strip is. Suppose we look at the set of all z,
+whose real part is between 0 and 1. Let's see, here's 1 and there's 0 and
+this is my vertical strip S. What is its image? We already saw that the yellow line, which is on the imaginary axis
+gets matched to the unit circle. The green line, for
+which I said the real bar is equal to 1, gets mapped to the circle of radius e. In other words, the strip from 0
+to 1 gets mapped to this annulus, between the circles are radius 1 and
+of radius e. If I draw a horizontal line
+with this picture in addition, the one that I drew is maybe at pi over 4, then I cut out a portion of that annulus. So for example, this turquoise
+portion here of the strip gets mapped to this turquoise portion of the annulus. These kinds of pictures
+help you understand what the exponential function does graphically. Just a few final questions. When is e to the z = 0? Well, let's find out. e to the z is equal to 0 when e
+to the x times e to they iy is 0. We know e to the iy, that's for
+all numbers on the circle of radius 1, they can never be 0. When is a product of two numbers 0? Well, one of the factors has to be 0. The second one can't be 0 so
+it has to be the first one. So we need, if that's e to the x to be 0. If you remember what e to the x looks
+like, e to the x looks like this. It never crosses the x axis. It's never equal to 0. In other words,
+e to the z can never take the value 0. Just like the real value exponential
+function, it never takes the value 0. Let's go a little bit further. Suppose I'm giving you
+a point in the complex plane, not the origin but any other point. Then can I find the w such that e
+to the w is equal to that point z? Let's write z in polar form as
+absolute value of z times e to theta. And let's write w in Cartesian form
+because that works best for this problem. So let's write w as u + iv. Then e to the w being e to the z is
+the same as e to the u times e to the iv, which is e to the w, being equal to absolute value of z to
+the e to the i theta, which is simply z. And this was e to the w. Now these are two numbers in polar form. When are two complex numbers
+in polar form the same? Well they would have to agree in
+their distance from the origin. So e to the u would have to be
+the absolute value of z and then their angles have
+to agree modular 2pi. So either the iv would have
+to be e to the i theta. In other words, when does e to the u
+equal to the absolute value of z? This is all be of valued now. That's the case when you u is the natural
+logarithm of the absolute value of c. And when it's e to the iv the same
+as e to the i theta, well, v and theta can only differ
+by a multiple of 2 pi. In other words, w, which is u + iv, has to be of the form natural log of z,
+that's my u, plus i * an argument of z,
+which is what theta is. You just saw the basic ideas in
+how to define a complex logarithm. You see there's an issue already with the
+argument being here, the argument function is a multi value function, and we'd
+have to decide how to pick the argument. So that we could hopefully make the
+logarithm function an analytic function. And indeed that is possible.
